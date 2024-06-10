@@ -1,0 +1,23 @@
+/* Colors */
+$clr-black: rgb(30, 30, 30);
+$clr-light-black: rgb(60, 60, 60);
+
+/* Indents */
+$indent-tiny: 4px;
+$indent-little: 8px;
+$indent-small: 16px;
+$indent-medium: 32px;
+$indent-large: 64px;
+$indent-huge: 128px;
+
+/* Typography */
+// Default text
+$text-font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+$text-color: $clr-light-black;
+$text-line-height: 1.5;
+// Headings
+$headings-font-family: 'Advent Pro', Helvetica, Arial, Lucida, sans-serif;
+$headings-color: $clr-black;
+$headings-line-height: 1.2;
+$heading1-size: 50px;
+$heading1-margin-bottom: $indent-medium;

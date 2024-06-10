@@ -1,0 +1,19 @@
+$logo-size: 32px;
+
+/* Navigation links */
+$nav-link-color: rgb(30,30,30);
+$nav-link-color-contrast: white;
+$nav-link-font-weight: 600;
+$nav-link-font-size: 14px;
+$distance-between-navlinks: 10px;
+
+/* Navigation buttons */
+$nav-button-outline-background: transparent;
+$nav-button-filling-background: $nav-link-color;
+$nav-button-filling-text-color: $nav-link-color-contrast;
+$nav-button-not-noticeable-background: rgb(240,240,240);
+$nav-button-padding: 10px 15px;
+$nav-button-border-radius: 10px;
+$nav-button-border-width: 2px;
+$nav-button-scale: 0.95;
+$nav-button-animation-duration: 0.2s;

@@ -1,0 +1,22 @@
+@import "./nav.global";
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1% 5%;
+
+  a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: $nav-link-font-size;
+    color: $nav-link-color;
+    font-weight: $nav-link-font-weight;
+  }
+
+  .buttons {
+    display: flex;
+    gap: $distance-between-navlinks;
+  }
+}

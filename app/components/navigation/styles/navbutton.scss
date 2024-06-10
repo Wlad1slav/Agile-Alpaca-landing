@@ -1,0 +1,24 @@
+@import "nav.global";
+
+.nav--button {
+  padding: $nav-button-padding;
+  border-radius: $nav-button-border-radius;
+  border: $nav-button-border-width solid;
+  transition: transform $nav-button-animation-duration ease;
+
+  &.outline {
+    background-color: $nav-button-outline-background;
+  }
+  &.filling {
+    color: $nav-button-filling-text-color;
+    background-color: $nav-button-filling-background;
+  }
+  &.not-noticeable {
+    border-color: $nav-button-not-noticeable-background;
+    background-color: $nav-button-not-noticeable-background;
+  }
+
+  &:hover {
+    transform: scale($nav-button-scale);
+  }
+}

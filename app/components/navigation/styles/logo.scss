@@ -1,0 +1,11 @@
+@import './nav.global';
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  img {
+    width: $logo-size;
+    height: $logo-size;
+  }
+}
