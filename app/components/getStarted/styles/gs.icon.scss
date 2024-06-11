@@ -1,0 +1,10 @@
+@import "gs.global";
+
+.get-started--icon {
+  width: $gs-icon-size;
+  transition: all 0.1s ease;
+
+  &.active {
+    transform: scale(1.2);
+  }
+}

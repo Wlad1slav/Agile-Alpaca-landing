@@ -1,0 +1,13 @@
+@import "gs.global";
+
+.get-started--input-field {
+  background-color: transparent;
+  border: none;
+  padding-inline: 5px;
+  height: $gs-components-height;
+  width: $gs-input-field-width;
+
+  &:focus {
+    outline: none;
+  }
+}

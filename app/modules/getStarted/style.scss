@@ -1,0 +1,17 @@
+@import "../../stylesheet/global";
+@import "../../components/getStarted/styles/gs.global";
+
+.get-started {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .field {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: $clr-darken-white;
+    padding-inline: 10px;
+    border-radius: $gs-components-border-radius;
+  }
+}

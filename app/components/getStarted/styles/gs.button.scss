@@ -1,0 +1,17 @@
+@import "gs.global";
+
+.get-start--button {
+  cursor: pointer;
+  height: $gs-components-height;
+  padding-inline: $gs-button-padding-inline;
+  border: 2px solid;
+  background-color: $gs-button-background;
+  color: $gs-button-color;
+  border-radius: $gs-components-border-radius;
+  transition: all ease $gs-button-animation-duration;
+
+  &:hover {
+    background-color: $gs-button-background_hover;
+    color: $gs-button-color_hover;
+  }
+}
