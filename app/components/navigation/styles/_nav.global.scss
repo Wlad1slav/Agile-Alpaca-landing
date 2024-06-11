@@ -1,3 +1,5 @@
+@import "../../../stylesheet/global";
+
 $logo-size: 32px;
 
 /* Navigation links */
@@ -11,7 +13,7 @@ $distance-between-navlinks: 10px;
 $nav-button-outline-background: transparent;
 $nav-button-filling-background: $nav-link-color;
 $nav-button-filling-text-color: $nav-link-color-contrast;
-$nav-button-not-noticeable-background: rgb(240,240,240);
+$nav-button-not-noticeable-background: $clr-darken-white;
 $nav-button-padding: 10px 15px;
 $nav-button-border-radius: 10px;
 $nav-button-border-width: 2px;

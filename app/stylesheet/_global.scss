@@ -1,6 +1,7 @@
 /* Colors */
 $clr-black: rgb(30, 30, 30);
 $clr-light-black: rgb(60, 60, 60);
+$clr-darken-white: rgb(240,240,240);
 
 /* Indents */
 $indent-tiny: 4px;
@@ -15,6 +16,7 @@ $indent-huge: 128px;
 $text-font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
 $text-color: $clr-light-black;
 $text-line-height: 1.5;
+$font-size-base: 17px;
 // Headings
 $headings-font-family: 'Advent Pro', Helvetica, Arial, Lucida, sans-serif;
 $headings-color: $clr-black;
