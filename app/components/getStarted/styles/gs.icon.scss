@@ -1,10 +1,24 @@
 @import "gs.global";
 
+
 .get-started--icon {
   width: $gs-icon-size;
-  transition: all 0.1s ease;
+  transition: all 0.2s ease;
 
   &.active {
     transform: scale(1.2);
+  }
+
+  .light {
+    display: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &.dark {
+      display: none;
+    }
+    &.light {
+      display: unset;
+    }
   }
 }

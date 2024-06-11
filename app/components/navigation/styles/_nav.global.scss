@@ -8,6 +8,7 @@ $nav-link-color-contrast: white;
 $nav-link-font-weight: 600;
 $nav-link-font-size: 14px;
 $distance-between-navlinks: 10px;
+$dark-theme-nav-link-color: white;
 
 /* Navigation buttons */
 $nav-button-outline-background: transparent;
@@ -19,3 +20,9 @@ $nav-button-border-radius: 10px;
 $nav-button-border-width: 2px;
 $nav-button-scale: 0.95;
 $nav-button-animation-duration: 0.2s;
+// Dark theme
+$dark-theme-nav-button-color: white;
+$dark-theme-nav-button-outline-background: transparent;
+$dark-theme-nav-button-filling-text-color: $clr-black;
+$dark-theme-nav-button-filling-background: white;
+$dark-theme-nav-button-not-noticeable-background: $clr-light-black;

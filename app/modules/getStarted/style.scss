@@ -14,4 +14,10 @@
     padding-inline: 10px;
     border-radius: $gs-components-border-radius;
   }
+
+  @media (prefers-color-scheme: dark) {
+    .field {
+      background-color: $clr-light-black;
+    }
+  }
 }

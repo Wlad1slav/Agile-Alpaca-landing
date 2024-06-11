@@ -3,13 +3,21 @@
 $gs-components-height: 50px;
 $gs-components-border-radius: 10px;
 
+/* Input field styles */
 $gs-input-field-width: 300px;
 
+/* Icon styles */
 $gs-icon-size: 20px;
 
+/* Buttons styles */
 $gs-button-padding-inline: 20px;
 $gs-button-background: $clr-black;
 $gs-button-color: white;
 $gs-button-background_hover: white;
 $gs-button-color_hover: $clr-black;
 $gs-button-animation-duration: 0.2s;
+// Dark theme
+$dark-theme-gs-button-background: white;
+$dark-theme-gs-button-color: $clr-black;
+$dark-theme-gs-button-background_hover: $clr-black;
+$dark-theme-gs-button-color_hover: white;

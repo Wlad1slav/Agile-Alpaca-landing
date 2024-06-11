@@ -18,6 +18,21 @@
     background-color: $nav-button-not-noticeable-background;
   }
 
+  @media (prefers-color-scheme: dark) {
+    color: $dark-theme-nav-button-color;
+    &.outline {
+      background-color: $dark-theme-nav-button-outline-background;
+    }
+    &.filling {
+      color: $dark-theme-nav-button-filling-text-color;
+      background-color: $dark-theme-nav-button-filling-background;
+    }
+    &.not-noticeable {
+      border-color: $dark-theme-nav-button-not-noticeable-background;
+      background-color: $dark-theme-nav-button-not-noticeable-background;
+    }
+  }
+
   &:hover {
     transform: scale($nav-button-scale);
   }

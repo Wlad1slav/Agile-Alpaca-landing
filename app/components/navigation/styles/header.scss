@@ -19,4 +19,10 @@ header {
     display: flex;
     gap: $distance-between-navlinks;
   }
+
+  @media (prefers-color-scheme: dark) {
+    a {
+      color: $dark-theme-nav-link-color;
+    }
+  }
 }

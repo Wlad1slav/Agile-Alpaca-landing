@@ -14,4 +14,14 @@
     background-color: $gs-button-background_hover;
     color: $gs-button-color_hover;
   }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark-theme-gs-button-background;
+    color: $dark-theme-gs-button-color;
+
+    &:hover {
+      background-color: $dark-theme-gs-button-background_hover;
+      color: $dark-theme-gs-button-color_hover;
+    }
+  }
 }

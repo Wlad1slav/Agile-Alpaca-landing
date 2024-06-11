@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import Header from "@/app/components/navigation/Header";
 
 import './stylesheet/app.scss';
+import './stylesheet/app.dark.scss';
+
 import '../public/favicon.ico';
 
 export const metadata: Metadata = {
