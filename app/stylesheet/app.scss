@@ -24,6 +24,7 @@ h1 {
   padding-top: 5%;
 }
 
+/* Blocks */
 .block--centralized {
   display: flex;
   flex-direction: column;
@@ -39,5 +40,7 @@ h1 {
 }
 
 .block--bright {
+  position: relative;
+  height: 600px;
   background: url("/images/pages/alpaca_on_the_background_of_the_retro_miami_sun.webp") no-repeat center;
 }
