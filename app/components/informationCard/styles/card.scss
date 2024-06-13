@@ -1,0 +1,102 @@
+@import "../../../stylesheet/global";
+@import "../../../stylesheet/animations";
+@import "card.global";
+
+.info-container {
+  position: absolute;
+
+  .front, .back {
+    display: flex;
+    align-items: center;
+    gap: $card-space-between-icon-and-title;
+
+    padding: $card-padding;
+    border-radius: $card-border-radius;
+
+    h3 {
+      font-size: $card-title-size;
+    }
+
+    p.subtitle {
+      font-size: $card-subtitle-size;
+    }
+
+    .icon--main {
+      width: $card-size-main-icon;
+    }
+  }
+
+  .front {
+    box-shadow: 0 20px 20px $card-box-shadow-color;
+    background: $card-front-background-color;
+
+    .info {
+      .title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+
+    &.icon-near-title {
+      .info {
+        .title {
+          margin-bottom: 10px;
+
+          .icon {
+            width: $card-size-main-icon-near-title;
+          }
+        }
+      }
+    }
+
+    &.icon-top {
+      flex-direction: column;
+    }
+  }
+
+  .back {
+    display: none;
+    border: 2px solid $clr-black;
+    border-bottom: 4px solid;
+    background: $card-back-background-color;
+  }
+
+  .front, .back { position: absolute; }
+
+  &:hover {
+    .front:not(.no-back) { display: none; }
+    .back { display: unset; }
+  }
+
+  .icons {
+    display: flex;
+    gap: 10px;
+    margin-top: $indent-small;
+
+    .icon {
+      &:hover {
+        animation: yo-yo 0.4s alternate;
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .info-container {
+    .front {
+      background: $dark-theme-card-front-background-color;
+      box-shadow: 0 20px 20px $dark-theme-card-box-shadow-color;
+      .icon--main {
+        fill: $dark-theme-card-color-main-icon;
+      }
+    }
+    .back {
+      background: $dark-theme-card-back-background-color;
+      h3, p { color: $dark-theme-card-back-text-color; }
+      border: none;
+    }
+  }
+
+}

@@ -1,0 +1,26 @@
+@import "../../../stylesheet/global";
+
+/* Card's styles */
+$card-padding: 10px;
+$card-border-radius: 15px;
+$card-box-shadow-color: rgba(0,0,0, 0.15);
+$dark-theme-card-box-shadow-color: black;
+
+/* indents */
+$card-space-between-icon-and-title: 10px;
+
+/* colors */
+$card-front-background-color: white;
+$card-back-background-color: $card-front-background-color;
+$dark-theme-card-front-background-color: $clr-black;
+$dark-theme-card-back-background-color: white;
+$dark-theme-card-back-text-color: $clr-black;
+
+/* typography */
+$card-title-size: 25px;
+$card-subtitle-size: 14px;
+
+/* icon styles */
+$card-size-main-icon: 50px;
+$card-size-main-icon-near-title: 30px;
+$dark-theme-card-color-main-icon: white;
