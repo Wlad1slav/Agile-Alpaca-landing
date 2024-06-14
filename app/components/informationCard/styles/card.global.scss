@@ -12,7 +12,8 @@ $card-space-between-icon-and-title: 10px;
 /* colors */
 $card-front-background-color: white;
 $card-back-background-color: $card-front-background-color;
-$dark-theme-card-front-background-color: $clr-black;
+$dark-theme-card-front-background-color: white;
+$dark-theme-card-front-text-color: $clr-black;
 $dark-theme-card-back-background-color: white;
 $dark-theme-card-back-text-color: $clr-black;
 
@@ -23,4 +24,4 @@ $card-subtitle-size: 14px;
 /* icon styles */
 $card-size-main-icon: 50px;
 $card-size-main-icon-near-title: 30px;
-$dark-theme-card-color-main-icon: white;
+$dark-theme-card-color-main-icon: $clr-black;

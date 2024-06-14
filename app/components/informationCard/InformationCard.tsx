@@ -41,7 +41,9 @@ function InformationCard(
                         {mainIconPlace === 'near-title' && mainIcon}
                         <h3>{title}</h3>
                     </div>
-                    {!hasBack && children}
+                    <p>
+                        {!hasBack && children}
+                    </p>
                 </div>
             </div>
 
