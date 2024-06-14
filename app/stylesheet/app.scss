@@ -9,6 +9,13 @@
   font-size: $font-size-base;
 }
 
+#content {
+  display: flex;
+  flex-direction: column;
+  gap: $indent-huge;
+  padding-inline: 10%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $headings-font-family;
   color: $headings-color;
@@ -20,11 +27,24 @@ h1 {
   margin-bottom: $heading1-margin-bottom;
 }
 
+h2 {
+  font-size: $heading2-size;
+  font-weight: $heading2-font-weight;
+}
+
+h3 { font-size: $heading3-size; }
+
 #content {
   padding-top: 5%;
 }
 
 /* Blocks */
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .block--centralized {
   display: flex;
   flex-direction: column;
