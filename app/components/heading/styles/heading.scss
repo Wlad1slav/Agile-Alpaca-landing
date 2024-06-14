@@ -1,0 +1,32 @@
+@import "../../../stylesheet/global";
+
+.heading {
+  text-align: center;
+
+  h1, h2, h3 {
+    text-transform: capitalize;
+    span {
+      font-size: unset;
+      color: unset;
+      font-weight: 1000;
+    }
+  }
+
+  .subheading {
+    text-transform: uppercase;
+    font-size: $font-size-base - 2;
+    font-weight: 600;
+    color: $clr-light-black;
+
+    @media (prefers-color-scheme: dark) {
+      color: lightgray;
+    }
+  }
+
+  &.indent-huge { margin-bottom: $indent-huge; }
+  &.indent-large { margin-bottom: $indent-large; }
+  &.indent-medium { margin-bottom: $indent-medium; }
+  &.indent-small { margin-bottom: $indent-small; }
+  &.indent-little { margin-bottom: $indent-little; }
+  &.indent-tiny { margin-bottom: $indent-tiny; }
+}
