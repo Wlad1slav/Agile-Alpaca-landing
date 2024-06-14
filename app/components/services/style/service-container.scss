@@ -1,0 +1,31 @@
+@import "../../../stylesheet/global";
+@import "./service-container.global";
+
+.service--container {
+  display: flex;
+  flex-direction: column;
+  gap: $indent-small;
+  width: $service-container-width;
+
+  padding: 60px 30px;
+
+  p, h3 { color: white; }
+
+  &.dark {
+    background-color: $service-container-dark-color;
+  }
+  &.light {
+    background-color: $service-container-light-color;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    p, h3 { color: $clr-black; }
+
+    &.dark {
+      background-color: white;
+    }
+    &.light {
+      background-color: darken(white, 10%);
+    }
+  }
+}
