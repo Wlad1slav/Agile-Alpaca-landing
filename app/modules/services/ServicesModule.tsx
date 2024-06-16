@@ -1,9 +1,10 @@
 import ServiceContainer from "@/app/components/services/ServiceContainer";
 
-import './style/services-block.scss';
-import {services} from "@/app/config/services.config";
+import './services-block.scss';
 
-function ServicesBlock() {
+function ServicesModule({services}: Readonly<{
+    services: Array<ComponentServiceInterface>
+}>) {
     return (
         <div className='block--services'>
             {
@@ -20,4 +21,4 @@ function ServicesBlock() {
     );
 }
 
-export default ServicesBlock;
+export default ServicesModule;

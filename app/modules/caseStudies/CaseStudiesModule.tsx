@@ -1,10 +1,10 @@
-import CaseStudy from "@/app/components/caseStudies/caseStudy";
+import CaseStudy from "@/app/components/caseStudy/caseStudy";
 
-import caseStudies from "@/app/config/caseStudies.config";
+import './case-studies.scss';
 
-import './styles/case-studies.scss';
-
-function CaseStudies() {
+function CaseStudiesModule({caseStudies}: Readonly<{
+    caseStudies: Array<ComponentCaseStudiesInterface>
+}>) {
     return (
         <div className="case-studies">
             {
@@ -31,4 +31,4 @@ function CaseStudies() {
     )
 }
 
-export default CaseStudies;
+export default CaseStudiesModule;
