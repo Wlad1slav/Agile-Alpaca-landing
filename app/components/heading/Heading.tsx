@@ -6,6 +6,9 @@ interface HeadingProps {
     children: React.ReactNode;
     subtext?: string;
     marginBottom?: 'huge' | 'large' | 'medium' | 'small' | 'little' | 'tiny';
+    isAbsolute?: boolean;
+    position?: StylePositionInterface;
+    textAlign?: 'center' | 'right' | 'left';
 }
 
 interface HeadingInterface {
@@ -20,10 +23,24 @@ const createHeading = (heading: 'h1' | 'h2' | 'h3') => (
         return null;
     }
 
-    const { children, subtext, marginBottom } = props;
+    const {
+        children,
+        subtext,
+        marginBottom,
+        isAbsolute=false,
+        position,
+        textAlign='center'
+    } = props;
 
     return (
-        <div className={`heading indent-${marginBottom}`}>
+        <div
+            className={`heading indent-${marginBottom}`}
+            style={{
+                position: isAbsolute ? 'absolute' : 'inherit',
+                ...position,
+                textAlign: textAlign
+            }}
+        >
             {subtext && <span className="subheading">{subtext}</span>}
             {heading === 'h1' && <h1>{children}</h1>}
             {heading === 'h2' && <h2>{children}</h2>}
