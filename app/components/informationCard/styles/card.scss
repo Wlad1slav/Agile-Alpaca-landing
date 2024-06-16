@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     gap: $card-space-between-icon-and-title;
+    transition: all 0.5s ease-in-out;
 
     padding: $card-padding;
     border-radius: $card-border-radius;
@@ -56,17 +57,33 @@
   }
 
   .back {
-    display: none;
+    //display: none;
     border: 2px solid $clr-black;
     border-bottom: 4px solid;
     background: $card-back-background-color;
   }
 
-  .front, .back { position: absolute; }
+  .front, .back {
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .back {
+    opacity: 0;
+    transform: translateX(-400%);
+    display: unset;
+  }
 
   &:hover {
-    .front:not(.no-back) { display: none; }
-    .back { display: unset; }
+    .front:not(.no-back) {
+      opacity: 0;
+    }
+
+    .back {
+      opacity: 1;
+      transform: translateX(0);
+      display: unset;
+    }
   }
 
   .icons {
