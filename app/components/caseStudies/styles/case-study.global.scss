@@ -1,0 +1,13 @@
+@import "../../../stylesheet/global";
+
+$case-study-space-between-elements: 20px;
+$case-study-border-width: 2px;
+$case-study-border-color: $clr-black;
+$case-study-container-padding: 20px;
+$case-study-background-color: rgb(240,240,240);
+$case-study-background-color_hover: white;
+$case-study-shadow_hover: 5px 15px 25px rgb(150, 150, 150);
+$case-study-image-max-width: 40%;
+$case-study-heading-font-weight: 600;
+$case-study-heading-font-size: $heading3-size + 5;
+$case-study-base-font-size: $font-size-base - 2;

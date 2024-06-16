@@ -1,0 +1,30 @@
+@import "./case-study.global";
+
+.case-studies--container {
+  display: flex;
+  flex-direction: column;
+  gap: $case-study-space-between-elements;
+
+  border: $case-study-border-width solid $case-study-border-color;
+  padding: $case-study-container-padding;
+
+  transition: all 0.2s ease-in-out;
+
+  background-color: $case-study-background-color;
+
+  &:hover {
+    background-color: $case-study-background-color_hover;
+    box-shadow: $case-study-shadow_hover;
+  }
+
+  img { max-width: $case-study-image-max-width; }
+  h3, .subtitle { font-weight: $case-study-heading-font-weight; }
+  h3 { font-size: $case-study-heading-font-size; }
+  p:not(.subtitle) { font-size: $case-study-base-font-size; }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: lightgray;
+    &:hover { box-shadow: 5px 15px 25px rgb(80, 80, 80); }
+    h3, p { color: $clr-black; }
+  }
+}

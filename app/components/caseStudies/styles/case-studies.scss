@@ -1,0 +1,10 @@
+@import "case-studies.global";
+
+.case-studies {
+  .case-studies--container {width: $case-studies-inside-container-width;}
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: $case-studies-space-between-containers;
+}
