@@ -17,7 +17,7 @@ function InformationCard(
         title: string;
         subtitle?: string;
         children?: ReactNode;
-        position: {left?: string, right?: string, top?: string, bottom?: string};
+        position: StylePositionInterface;
         mainIcon: JSX.Element;
         mainIconPlace: 'top' | 'left' | 'near-title';
         additionalIcons?: JSX.Element[];
