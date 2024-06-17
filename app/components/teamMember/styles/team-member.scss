@@ -1,0 +1,37 @@
+@import "./team-member.global";
+
+.team-member {
+  position: relative;
+  width: $team-member-container-width;
+  transition: transform 0.2s ease-in-out;
+
+  .info {
+    position: absolute;
+    bottom: 0;
+    padding: $team-member-info-container-padding;
+    margin: 10px;
+
+    width: $team-member-info-container-width;
+
+    background: $team-member-info-container-background-color;
+    backdrop-filter: blur($team-member-info-container-background-blur);
+
+    h3 { font-weight: $team-member-info-container-heading-weight; }
+
+    @media (prefers-color-scheme: dark) {
+      h3, p { color: $dark-theme-team-member-info-container-heading-color; }
+    }
+  }
+
+  img {
+    height: $team-member-photo-height;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: $team-member-photo-top-border-radius;
+    border-top-right-radius: $team-member-photo-top-border-radius;
+  }
+
+  &:hover {
+    transform: translateY(-10%)
+  }
+}
