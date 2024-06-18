@@ -1,0 +1,14 @@
+@import "../../../stylesheet/global";
+
+/* Positioning */
+section.row {
+
+  // content
+  .column {
+    margin-inline: 10%;
+  }
+  .contrast {
+    background-color: $clr-black;
+    * { color: white; }
+  }
+}
