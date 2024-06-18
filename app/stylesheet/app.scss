@@ -16,8 +16,6 @@
 #content {
   display: flex;
   flex-direction: column;
-  gap: $indent-huge;
-  padding-inline: 10%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,12 +41,6 @@ h3 { font-size: $heading3-size; }
 }
 
 /* Blocks */
-.block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .block--centralized {
   display: flex;
   flex-direction: column;
@@ -67,4 +59,21 @@ h3 { font-size: $heading3-size; }
   position: relative;
   height: 600px;
   background: url("/images/pages/alpaca_on_the_background_of_the_retro_miami_sun.webp") no-repeat center;
+}
+
+/* Margins */
+* {
+  &.mb--huge { margin-bottom: $indent-huge; }
+  &.mb--large { margin-bottom: $indent-large; }
+  &.mb--medium { margin-bottom: $indent-medium; }
+  &.mb--small { margin-bottom: $indent-small; }
+  &.mb--little { margin-bottom: $indent-little; }
+  &.mb--tiny { margin-bottom: $indent-tiny; }
+
+  &.mt--huge { margin-top: $indent-huge; }
+  &.mt--large { margin-top: $indent-large; }
+  &.mt--medium { margin-top: $indent-medium; }
+  &.mt--small { margin-top: $indent-small; }
+  &.mt--little { margin-top: $indent-little; }
+  &.mt--tiny { margin-top: $indent-tiny; }
 }

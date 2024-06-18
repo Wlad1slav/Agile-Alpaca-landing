@@ -5,7 +5,7 @@ import './styles/heading.scss';
 interface HeadingProps {
     children: React.ReactNode;
     subtext?: string;
-    marginBottom?: 'huge' | 'large' | 'medium' | 'small' | 'little' | 'tiny';
+    marginBottom?: MarginSize;
     isAbsolute?: boolean;
     position?: StylePositionInterface;
     textAlign?: 'center' | 'right' | 'left';
@@ -34,7 +34,7 @@ const createHeading = (heading: 'h1' | 'h2' | 'h3') => (
 
     return (
         <div
-            className={`heading indent-${marginBottom}`}
+            className={`heading mb--${marginBottom}`}
             style={{
                 position: isAbsolute ? 'absolute' : 'inherit',
                 ...position,

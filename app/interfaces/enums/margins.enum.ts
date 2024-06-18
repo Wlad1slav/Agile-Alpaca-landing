@@ -1,0 +1,1 @@
+type MarginSize = 'huge' | 'large' | 'medium' | 'small' | 'little' | 'tiny';
