@@ -7,8 +7,23 @@ section.row {
   .column {
     margin-inline: 10%;
   }
-  .contrast {
+  .contrast--column {
     background-color: $clr-black;
     * { color: white; }
+
+    @media (prefers-color-scheme: dark) {
+      background-color: white;
+      * { color: $clr-black; }
+      svg { fill: white !important; }
+    }
+  }
+
+  &.contrast--row {
+    svg {
+      fill: $clr-black;
+      @media (prefers-color-scheme: dark) {
+        fill: white;
+      }
+    }
   }
 }

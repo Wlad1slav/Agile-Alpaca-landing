@@ -11,13 +11,13 @@ function Row({children, isContrast, separators, style, margin = {bottom: 'huge'}
 }>) {
     return (
         <section
-            className={`row mt--${margin?.top} mb--${margin?.bottom}`}
+            className={`row mt--${margin?.top} mb--${margin?.bottom} ${isContrast && 'contrast--row'}`}
             style={{...style}}
         >
             {separators?.top}
             {
                 isContrast ?
-                    <div className="contrast">
+                    <div className="contrast--column">
                         {children}
                     </div> : children
             }
