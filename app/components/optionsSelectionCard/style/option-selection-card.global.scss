@@ -1,0 +1,30 @@
+@import "../../../stylesheet/global";
+
+$option-selection-card-border-width: 2px;
+$option-selection-card-border-color: $clr-light-black;
+$option-selection-card-border-color__hover: gray;
+$option-selection-card-border-radius: 30px;
+
+$option-selection-card-transition-time: 0.3s;
+
+$option-selection-card-height: 500px;
+$option-selection-card-width: 30%;
+$option-selection-card-header-container-height: 380px;
+$option-selection-card-header-container-img-height: 170px;
+
+$option-selection-card-header-container-info-padding: 10px 15px;
+$option-selection-card-header-container-info-blur__hover: 2px;
+$option-selection-card-header-container-heading-font-size: 40px;
+$option-selection-card-header-container-heading-margin: 10px;
+$option-selection-card-header-container-subtext-font-size: $font-size-base - 4;
+
+$option-selection-card-bottom-container-padding: 10px 15px;
+$option-selection-card-bottom-time-text-color: gray;
+$option-selection-card-bottom-price-font-size: 30px;
+$option-selection-card-bottom-button-background-color: white;
+$option-selection-card-bottom-button-text-color: $clr-black;
+$option-selection-card-bottom-button-background-color__hover: $clr-black;
+$option-selection-card-bottom-button-text-color__hover: white;
+$option-selection-card-bottom-button-padding: 10px 15px;
+$option-selection-card-bottom-button-border-radius: 100px;
+$option-selection-card-bottom-button-border-width: 2px;
