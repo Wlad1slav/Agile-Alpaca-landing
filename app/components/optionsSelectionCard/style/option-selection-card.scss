@@ -10,9 +10,11 @@
   height: $option-selection-card-height;
   width: $option-selection-card-width;
 
-  &, img {
-    border-radius: $option-selection-card-border-radius;
+  @media (prefers-color-scheme: dark) {
+    border-color: $dark-theme-option-selection-card-border-color;
   }
+
+  &, img { border-radius: $option-selection-card-border-radius; }
 
   .header-container {
     position: relative;
@@ -31,6 +33,8 @@
       bottom: 0;
       transition: all $option-selection-card-transition-time ease;
       padding: $option-selection-card-header-container-info-padding;
+
+      p, h3 { transition: color $option-selection-card-transition-time ease; }
 
       h3 {
         font-size: $option-selection-card-header-container-heading-font-size;
@@ -71,19 +75,37 @@
       border-radius: $option-selection-card-bottom-button-border-radius;
       border: $option-selection-card-bottom-button-border-width solid $option-selection-card-bottom-button-background-color;
       transition: all $option-selection-card-transition-time ease-in-out;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: $dark-theme-option-selection-card-bottom-button-background-color;
+        border-color: $dark-theme-option-selection-card-bottom-button-background-color;
+        color: $dark-theme-option-selection-card-bottom-button-text-color !important;
+      }
     }
   }
 
   &:hover {
     border-color: $option-selection-card-border-color__hover;
+    @media (prefers-color-scheme: dark) {
+      border-color: $dark-theme-option-selection-card-border-color__hover;
+    }
+
     img { height: 100%; }
     .info {
       backdrop-filter: blur($option-selection-card-header-container-info-blur__hover);
       border-radius: $option-selection-card-border-radius;
+      @media (prefers-color-scheme: dark) {
+        * { color: white; }
+      }
     }
     button {
       background-color: $option-selection-card-bottom-button-background-color__hover;
       color: $option-selection-card-bottom-button-text-color__hover !important;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: $dark-theme-option-selection-card-bottom-button-background-color__hover;
+        color: $dark-theme-option-selection-card-bottom-button-text-color__hover !important;
+      }
     }
   }
 }
