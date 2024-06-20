@@ -27,11 +27,10 @@
     height: $team-member-photo-height;
     object-fit: cover;
     object-position: center;
-    border-top-left-radius: $team-member-photo-top-border-radius;
-    border-top-right-radius: $team-member-photo-top-border-radius;
+    border-radius: $team-member-photo-border-radius;
   }
 
   &:hover {
-    transform: translateY(-10%)
+    transform: $team-member-container-transform__hover;
   }
 }
