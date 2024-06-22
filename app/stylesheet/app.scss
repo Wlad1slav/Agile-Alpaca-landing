@@ -76,4 +76,18 @@ h3 { font-size: $heading3-size; }
   &.mt--small { margin-top: $indent-small; }
   &.mt--little { margin-top: $indent-little; }
   &.mt--tiny { margin-top: $indent-tiny; }
+
+  &.mr--huge { margin-right: $indent-huge; }
+  &.mr--large { margin-right: $indent-large; }
+  &.mr--medium { margin-right: $indent-medium; }
+  &.mr--small { margin-right: $indent-small; }
+  &.mr--little { margin-right: $indent-little; }
+  &.mr--tiny { margin-right: $indent-tiny; }
+
+  &.ml--huge { margin-left: $indent-huge; }
+  &.ml--large { margin-left: $indent-large; }
+  &.ml--medium { margin-left: $indent-medium; }
+  &.ml--small { margin-left: $indent-small; }
+  &.ml--little { margin-left: $indent-little; }
+  &.ml--tiny { margin-left: $indent-tiny; }
 }

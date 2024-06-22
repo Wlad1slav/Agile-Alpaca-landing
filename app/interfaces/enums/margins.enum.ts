@@ -1,1 +1,1 @@
-type MarginSize = 'huge' | 'large' | 'medium' | 'small' | 'little' | 'tiny';
+type MarginSize = 'huge' | 'large' | 'medium' | 'small' | 'little' | 'tiny' | null;
