@@ -1,24 +1,29 @@
-import NavBar from "@/app/components/navigation/NavBar";
-import NavLink from "@/app/components/navigation/NavLink";
-import NavButton from "@/app/components/navigation/NavButton";
-import Logo from "@/app/components/navigation/Logo";
+'use client'
 
-import './styles/header.scss';
+import {useEffect, useCallback, useState} from "react";
 
-function Header(): JSX.Element {
+import HeaderStatic from "@/app/components/navigation/HeaderStatic";
+import HeaderFixed from "@/app/components/navigation/HeaderFixed";
+
+function Header() {
+    const [showFixedHeader, setShowFixedHeader] = useState(false);
+
+    const handleScroll = useCallback(() => {
+        setShowFixedHeader(window.scrollY > 100);
+    }, []);
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [handleScroll]);
+
     return (
-        <header>
-            <Logo />
-            <NavBar>
-                <NavLink href='#' text='Solutions' />
-                <NavLink href='#' text='Case studies' />
-                <NavLink href='#' text='Price' />
-            </NavBar>
-            <div className="buttons">
-                <NavButton href='#' fill={'not-noticeable'} text='Contact us' />
-                <NavButton href='#' fill={'outline'} text='Get started' />
-            </div>
-        </header>
+        <>
+            <HeaderStatic />
+            { showFixedHeader && <HeaderFixed /> }
+        </>
     );
 }
 

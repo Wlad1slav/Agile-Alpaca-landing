@@ -1,4 +1,4 @@
-function NavLink({href, text}: Readonly<{href: string, text: string}>) {
+function NavLink({href, text}: Readonly<ComponentNavLinkInterface>) {
     return (
         <a href={href}>
             {text}

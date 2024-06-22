@@ -1,0 +1,40 @@
+@import "../../../stylesheet/global";
+@import "./fixed-header.global";
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  margin-top: $fixed-header-margin-top;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $fixed-header-space-between-elements;
+
+  padding: $fixed-header-padding;
+  border-radius: $fixed-header-border-radius-left $fixed-header-border-radius-right $fixed-header-border-radius-right $fixed-header-border-radius-left;
+
+  background-color: $fixed-header-background-color;
+
+  box-shadow: 0 0 20px $clr-shadow-light;
+  backdrop-filter: blur($fixed-header-background-blur);
+
+  .nav--button {
+    background-color: $fixed-header-button-color;
+    border: none;
+    box-shadow: 0 0 5px $fixed-header-box-shadow;
+    border-radius: $fixed-header-border-radius-right;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark-theme-fixed-header-background-color;
+    box-shadow: 0 0 20px $clr-shadow-dark;
+    .nav--button {
+      color: $clr-black;
+      box-shadow: 0 0 5px $clr-shadow-dark;
+    }
+  }
+}

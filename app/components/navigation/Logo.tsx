@@ -1,10 +1,12 @@
 import './styles/logo.scss';
 
-function Logo() {
+function Logo({withName = true}: Readonly<{
+    withName?: boolean;
+}>) {
     return (
         <a href="/" className='logo'>
             <img src="/images/logo.webp" alt="Alpaca Agile logo"/>
-            <span>/ agile-alpaca</span>
+            {withName && <span>/ agile-alpaca</span>}
         </a>
     );
 }
