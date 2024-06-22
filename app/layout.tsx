@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import Header from "@/app/components/navigation/Header";
+import Footer from "@/app/components/footer/Footer";
 
 import './stylesheet/app.scss';
 import './stylesheet/app.dark.scss';
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 <div id="content">
                     {children}
                 </div>
+                <Footer />
             </body>
         </html>
     );
