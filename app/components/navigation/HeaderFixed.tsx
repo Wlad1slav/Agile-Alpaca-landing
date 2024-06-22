@@ -14,12 +14,12 @@ function HeaderFixed() {
             <NavBar>
                 {
                     navigationLinks.map((value) => {
-                        return <NavLink {...value} />
+                        return <NavLink key={value.href} {...value} />
                     })
                 }
             </NavBar>
             <div className="buttons">
-                <NavButton href='#' fill={'outline'} text='Get started' />
+                <NavButton href='#getStarted' fill={'outline'} text='Get started' />
             </div>
         </div>
     );

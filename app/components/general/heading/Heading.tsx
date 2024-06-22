@@ -9,6 +9,7 @@ interface HeadingProps {
     isAbsolute?: boolean;
     position?: StylePositionInterface;
     textAlign?: 'center' | 'right' | 'left';
+    id?: string;
 }
 
 interface HeadingInterface {
@@ -29,7 +30,8 @@ const createHeading = (heading: 'h1' | 'h2' | 'h3') => (
         marginBottom,
         isAbsolute=false,
         position,
-        textAlign='center'
+        textAlign='center',
+        id
     } = props;
 
     return (
@@ -40,6 +42,7 @@ const createHeading = (heading: 'h1' | 'h2' | 'h3') => (
                 ...position,
                 textAlign: textAlign
             }}
+            id={id}
         >
             {subtext && <span className="subheading">{subtext}</span>}
             {heading === 'h1' && <h1>{children}</h1>}

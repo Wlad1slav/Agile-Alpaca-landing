@@ -3,12 +3,13 @@ import React from "react";
 import './styles/positioning.scss';
 import utilGenerationOfMarginCssClasses from "@/app/utils/util.generationOfMarginCssClasses";
 
-function Row({children, isContrast, separators, style, margin = {bottom: 'huge'}}: Readonly<{
+function Row({children, isContrast, separators, style, margin = {bottom: 'huge'}, id}: Readonly<{
     children: React.ReactNode;
     isContrast?: boolean;
     separators?: {top?: JSX.Element, bottom?: JSX.Element};
     style?: {};
     margin?: CssClassMarginInterface;
+    id?: string;
 }>) {
 
     const classes = [
@@ -21,6 +22,7 @@ function Row({children, isContrast, separators, style, margin = {bottom: 'huge'}
         <section
             className={classes.join(' ')}
             style={{...style}}
+            id={id}
         >
             {separators?.top}
             {

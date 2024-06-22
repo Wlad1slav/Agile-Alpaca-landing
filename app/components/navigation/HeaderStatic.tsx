@@ -13,13 +13,13 @@ function HeaderStatic(): JSX.Element {
             <NavBar>
                 {
                     navigationLinks.map((value) => {
-                        return <NavLink {...value} />
+                        return <NavLink key={value.href} {...value} />
                     })
                 }
             </NavBar>
             <div className="buttons">
                 <NavButton href='#' fill={'not-noticeable'} text='Contact us' />
-                <NavButton href='#' fill={'outline'} text='Get started' />
+                <NavButton href='#getStarted' fill={'outline'} text='Get started' />
             </div>
         </header>
     );
