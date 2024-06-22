@@ -1,0 +1,13 @@
+@import "cta.global";
+
+.cta {
+  display: flex;
+  .cta--center-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $cta-space-between-elements;
+    p { padding-inline: 10%; }
+  }
+}
