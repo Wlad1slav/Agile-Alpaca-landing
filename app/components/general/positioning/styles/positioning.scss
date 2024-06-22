@@ -1,12 +1,17 @@
-@import "../../../stylesheet/global";
+@import "../../../../stylesheet/global";
 
 /* Positioning */
 section.row {
-
-  // content
   .column {
     margin-inline: 10%;
+
+    &.centralized {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
+
   .contrast--column {
     background-color: $clr-black;
     * { color: white; }
