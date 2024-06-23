@@ -1,0 +1,36 @@
+@import "testimonials.global";
+
+.testimonials {
+  display: flex;
+  gap: $testimonials-space-between-sides;
+
+  h2 {
+    font-size: $testimonials-heading2-size;
+  }
+
+  .side {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .quote {
+    p { font-size: $testimonials-paragraph-size; }
+    svg {
+      width: $testimonials-svg-quote-width;
+      margin-left: -15px;
+      @media (prefers-color-scheme: dark) {
+        fill: $clr-darken-white;
+      }
+    }
+  }
+
+  .stars {
+    display: flex;
+    gap: 5px;
+    svg {
+      width: $testimonials-svg-stars-width;
+      fill: $testimonials-svg-stars-color;
+    }
+  }
+}

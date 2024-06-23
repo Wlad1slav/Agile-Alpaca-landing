@@ -1,0 +1,34 @@
+@import "testimonial.global";
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: $testimonial-padding;
+  background-color: $clr-black;
+  border-radius: $testimonial-border-radius;
+
+  * { color: $clr-darken-white; }
+
+  .head {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img {
+      width: $testimonial-reviewer-photo-width;
+      border-radius: 100%;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: $testimonial-reviewer-name-text-size;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark-theme-testimonial-background-color;
+    * { color: $dark-theme-testimonial-text-color; }
+  }
+}
