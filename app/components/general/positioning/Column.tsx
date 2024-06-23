@@ -6,12 +6,14 @@ function Column(
         children,
         style,
         margin = {bottom: 'medium'},
-        isContentCentralized=false
+        isContentCentralized=false,
+        id
     }: Readonly<{
         children: React.ReactNode;
         style?: {};
         margin?: CssClassMarginInterface;
         isContentCentralized?: boolean;
+        id?: string;
 }>) {
     const classes = [
         'column',
@@ -20,7 +22,7 @@ function Column(
     ];
 
     return (
-        <div className={classes.join(' ')} style={{...style}}>
+        <div id={id} className={classes.join(' ')} style={{...style}}>
             {children}
         </div>
     );
