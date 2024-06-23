@@ -1,24 +1,39 @@
 import React from "react";
 
-import GetStartedModule from "@/app/modules/getStarted/GetStartedModule";
-import InformationCard from "@/app/components/informationCard/InformationCard";
-import Icon from "@/app/components/general/icon/Icon";
-import Heading from "@/app/components/general/heading/Heading";
-import ServicesModule from "@/app/modules/services/ServicesModule";
-import CaseStudiesModule from "@/app/modules/caseStudies/CaseStudiesModule";
-import caseStudies from "@/app/config/caseStudies.config";
-import {services} from "@/app/config/services.config";
-import Team from "@/app/modules/team/Team";
-import {teamConfig} from "@/app/config/team.config";
-import OptionSelectionCards from "@/app/modules/optionSelectionCards/OptionSelectionCards";
 import Separator from "@/app/components/general/separator/Separator";
 import Row from "@/app/components/general/positioning/Row";
 import Column from "@/app/components/general/positioning/Column";
-import {optionCards} from "@/app/config/optionCards";
+import Icon from "@/app/components/general/icon/Icon";
+import Heading from "@/app/components/general/heading/Heading";
+import InformationCard from "@/app/components/informationCard/InformationCard";
 import CallToAction from "@/app/components/cta/CallToAction";
-import Testimonials from "@/app/modules/testimonials/Testimonials";
-import testimonials from "@/app/config/testimonials.config";
 
+import ServicesModule from "@/app/modules/services/ServicesModule";
+import GetStartedModule from "@/app/modules/getStarted/GetStartedModule";
+import Team from "@/app/modules/team/Team";
+import Testimonials from "@/app/modules/testimonials/Testimonials";
+import OptionSelectionCards from "@/app/modules/optionSelectionCards/OptionSelectionCards";
+import CaseStudiesModule from "@/app/modules/caseStudies/CaseStudiesModule";
+
+import caseStudies from "@/app/config/caseStudies.config";
+import {services} from "@/app/config/services.config";
+import {teamConfig} from "@/app/config/team.config";
+import {optionCards} from "@/app/config/optionCards";
+import testimonials from "@/app/config/testimonials.config";
+import {baseUrl, metaDataConfig} from "@/app/config/metaData.config";
+
+export async function generateMetadata() {
+    return {
+        metadataBase: new URL(baseUrl),
+        title: metaDataConfig.homepage.title,
+        description: metaDataConfig.homepage.metaDescription,
+        openGraph: {
+            title: metaDataConfig.homepage.title,
+            description: metaDataConfig.homepage.metaDescription,
+            images: metaDataConfig.homepage.pageImageUrl,
+        },
+    };
+}
 
 export default function Home() {
     return (
