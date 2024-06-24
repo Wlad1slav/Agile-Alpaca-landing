@@ -2,11 +2,15 @@ import NavBar from "@/app/components/navigation/NavBar";
 import NavLink from "@/app/components/navigation/NavLink";
 import NavButton from "@/app/components/navigation/NavButton";
 import Logo from "@/app/components/navigation/Logo";
+import ThemeToggle from "@/app/components/general/theme-toggle/ThemeToggle";
 
 import './styles/header.scss';
 import navigationLinks from "@/app/config/navigation.config";
 
+import "@theme-toggles/react/css/Classic.css"
+
 function HeaderStatic(): JSX.Element {
+
     return (
         <header>
             <Logo />
@@ -20,6 +24,7 @@ function HeaderStatic(): JSX.Element {
             <div className="buttons">
                 <NavButton href='#' fill={'not-noticeable'} text='Contact us' />
                 <NavButton href='#getStarted' fill={'outline'} text='Get started' />
+                <ThemeToggle />
             </div>
         </header>
     );

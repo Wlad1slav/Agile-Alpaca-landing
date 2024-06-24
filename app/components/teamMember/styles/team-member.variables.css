@@ -12,9 +12,7 @@
   --tm-info-container-heading-color: var(--clr-black);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --tm-info-container-heading-color: white;
-    --tm-info-container-background-color: rgba(30, 30, 30, 0.8);
-  }
+body.dark-theme {
+  --tm-info-container-heading-color: white;
+  --tm-info-container-background-color: rgba(30, 30, 30, 0.8);
 }

@@ -13,10 +13,8 @@
   --button-outline-text-color: var(--clr-black);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --button-filling-background-color: var(--clr-darken-white);
-    --button-filling-text-color: var(--clr-black);
-    --button-outline-text-color: var(--clr-darken-white);
-  }
+body.dark-theme {
+  --button-filling-background-color: var(--clr-darken-white);
+  --button-filling-text-color: var(--clr-black);
+  --button-outline-text-color: var(--clr-darken-white);
 }

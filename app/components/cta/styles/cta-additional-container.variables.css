@@ -8,9 +8,7 @@
   --cta-container-svg-filling: var(--clr-black);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --cta-container-shadow-color: var(--clr-shadow-dark);
-    --cta-container-svg-filling: var(--clr-darken-white);
-  }
+body.dark-theme {
+  --cta-container-shadow-color: var(--clr-shadow-dark);
+  --cta-container-svg-filling: var(--clr-darken-white);
 }

@@ -32,15 +32,14 @@
     --osc-bottom-button-border-width: 2px;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --osc-border-color: grey;
-        --osc-border-color__hover: var(--clr-light-black);
+body.dark-theme {
+    --osc-border-color: grey;
+    --osc-border-color__hover: var(--clr-light-black);
 
-        --osc-bottom-button-background-color: var(--clr-black);
-        --osc-bottom-button-text-color: white;
-        --osc-bottom-button-background-color__hover: white;
-        --osc-bottom-button-text-color__hover: var(--clr-black);
-    }
+    --osc-bottom-button-background-color: var(--clr-black);
+    --osc-bottom-button-text-color: white;
+    --osc-bottom-button-background-color__hover: white;
+    --osc-bottom-button-text-color__hover: var(--clr-black);
 }
+
 

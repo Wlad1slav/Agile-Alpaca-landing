@@ -32,10 +32,8 @@
     --heading3-size: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text-color: white;
-        --headings-color: white;
-        --body-color: var(--clr-black);
-    }
+body.dark-theme {
+    --text-color: white;
+    --headings-color: white;
+    --body-color: var(--clr-black);
 }

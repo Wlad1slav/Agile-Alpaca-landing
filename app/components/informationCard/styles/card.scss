@@ -1,4 +1,5 @@
 @import "../../../stylesheet/animations.css";
+@import "card.variables.css";
 
 .info-container {
   position: absolute;
@@ -13,17 +14,13 @@
   padding: var(--card-padding);
   border-radius: var(--card-border-radius);
 
-  h3 {
-    font-size: var(--card-title-size);
-  }
+  h3 { font-size: var(--card-title-size); }
 
-  p.subtitle {
-    font-size: var(--card-subtitle-size);
-  }
+  p.subtitle { font-size: var(--card-subtitle-size); }
 
-  .icon--main {
-    width: var(--card-size-main-icon);
-  }
+  .icon--main { width: var(--card-size-main-icon); }
+
+  * { color: var(--card-front-text-color); }
 }
 
 .info-container .front {

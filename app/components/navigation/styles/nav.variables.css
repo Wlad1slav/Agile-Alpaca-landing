@@ -20,14 +20,13 @@
   --nav-button-animation-duration: 0.2s;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --nav-link-color: white;
+body.dark-theme {
+  --nav-link-color: white;
 
-    /* Navigation buttons */
-    --nav-button-outline-background: transparent;
-    --nav-button-filling-text-color: var(--clr-black);
-    --nav-button-filling-background: white;
-    --nav-button-not-noticeable-background: var(--clr-light-black);
-  }
+  /* Navigation buttons */
+  --nav-button-outline-background: transparent;
+  --nav-button-filling-text-color: var(--clr-black);
+  --nav-button-filling-background: white;
+  --nav-button-not-noticeable-background: var(--clr-light-black);
 }
+

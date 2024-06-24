@@ -18,11 +18,9 @@
 }
 
 /* Dark theme */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --gs-button-background: white;
-    --gs-button-color: var(--clr-black);
-    --gs-button-background-hover: var(--clr-black);
-    --gs-button-color-hover: white;
-  }
+body.dark-theme {
+  --gs-button-background: white;
+  --gs-button-color: var(--clr-black);
+  --gs-button-background-hover: var(--clr-black);
+  --gs-button-color-hover: white;
 }

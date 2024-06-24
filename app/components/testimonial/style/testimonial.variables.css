@@ -8,9 +8,7 @@
     --testimonial-text-color: var(--clr-darken-white);
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --testimonial-background-color: var(--clr-darken-white);
-        --testimonial-text-color: var(--clr-black);
-    }
+body.dark-theme {
+    --testimonial-background-color: var(--clr-darken-white);
+    --testimonial-text-color: var(--clr-black);
 }
