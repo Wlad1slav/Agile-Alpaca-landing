@@ -67,8 +67,10 @@ h3 { font-size: var(--heading3-size); }
   position: relative;
   height: 600px;
   background: url("/images/pages/alpaca_on_the_background_of_the_retro_miami_sun.webp") no-repeat center;
+}
 
-  @media (prefers-color-scheme: dark) {
+body.dark-theme {
+  .block--bright {
     background: url("/images/pages/alpaca_retro_dark_theme.webp") no-repeat center;
   }
 }
