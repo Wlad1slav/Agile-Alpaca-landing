@@ -1,11 +1,11 @@
-@import "testimonials.global";
+@import "testimonials.variables.css";
 
 .testimonials {
   display: flex;
-  gap: $testimonials-space-between-sides;
+  gap: var(--testimonials-space-between-sides);
 
   h2 {
-    font-size: $testimonials-heading2-size;
+    font-size: var(--testimonials-heading2-size);
   }
 
   .side {
@@ -15,13 +15,11 @@
   }
 
   .quote {
-    p { font-size: $testimonials-paragraph-size; }
+    p { font-size: var(--testimonials-paragraph-size); }
     svg {
-      width: $testimonials-svg-quote-width;
+      width: var(--testimonials-svg-quote-width);
       margin-left: -15px;
-      @media (prefers-color-scheme: dark) {
-        fill: $clr-darken-white;
-      }
+      fill: var(--testimonials-svg-quote-color);
     }
   }
 
@@ -29,8 +27,8 @@
     display: flex;
     gap: 5px;
     svg {
-      width: $testimonials-svg-stars-width;
-      fill: $testimonials-svg-stars-color;
+      width: var(--testimonials-svg-stars-width);
+      fill: var(--testimonials-svg-stars-color);
     }
   }
 }

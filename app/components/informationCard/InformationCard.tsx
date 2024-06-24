@@ -1,5 +1,6 @@
 import React, {ReactNode} from "react";
 
+import './styles/card.variables.css';
 import './styles/card.scss';
 
 

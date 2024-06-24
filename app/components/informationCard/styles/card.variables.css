@@ -1,0 +1,36 @@
+/* Root CSS Variables */
+:root {
+  --card-padding: 10px;
+  --card-border-radius: 15px;
+  --card-box-shadow-color: rgba(0,0,0, 0.15);
+
+  /* indents */
+  --card-space-between-icon-and-title: 10px;
+
+  /* colors */
+  --card-front-background-color: white;
+  --card-back-background-color: white;
+
+  /* typography */
+  --card-title-size: 25px;
+  --card-subtitle-size: 14px;
+
+  /* icon styles */
+  --card-size-main-icon: 50px;
+  --card-size-main-icon-near-title: 30px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --card-box-shadow-color: var(--clr-black);
+
+    /* colors */
+    --card-front-background-color: white;
+    --card-front-text-color: var(--clr-black);
+    --card-back-background-color: white;
+    --card-back-text-color: var(--clr-black);
+
+    /* icon styles */
+    --card-color-main-icon: var(--clr-black);
+  }
+}

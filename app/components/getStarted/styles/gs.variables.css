@@ -1,0 +1,28 @@
+:root {
+  --gs-components-height: 50px;
+  --gs-components-border-radius: 10px;
+
+  /* Input field styles */
+  --gs-input-field-width: 300px;
+
+  /* Icon styles */
+  --gs-icon-size: 20px;
+
+  /* Buttons styles */
+  --gs-button-padding-inline: 20px;
+  --gs-button-background: var(--clr-black);
+  --gs-button-color: white;
+  --gs-button-background-hover: white;
+  --gs-button-color-hover: var(--clr-black);
+  --gs-button-animation-duration: 0.2s;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gs-button-background: white;
+    --gs-button-color: var(--clr-black);
+    --gs-button-background-hover: var(--clr-black);
+    --gs-button-color-hover: white;
+  }
+}

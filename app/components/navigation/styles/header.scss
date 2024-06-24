@@ -1,4 +1,4 @@
-@import "./nav.global";
+@import "nav.variables.css";
 
 header {
   display: flex;
@@ -10,19 +10,13 @@ header {
   a {
     text-decoration: none;
     text-transform: capitalize;
-    font-size: $nav-link-font-size;
-    color: $nav-link-color;
-    font-weight: $nav-link-font-weight;
+    font-size: var(--nav-link-font-size);
+    color: var(--nav-link-color);
+    font-weight: var(--nav-link-font-weight);
   }
 
   .buttons {
     display: flex;
-    gap: $distance-between-navlinks;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    a {
-      color: $dark-theme-nav-link-color;
-    }
+    gap: var(--distance-between-navlinks);
   }
 }

@@ -1,0 +1,46 @@
+:root {
+    --osc-border-width: 2px;
+    --osc-border-color: var(--clr-light-black);
+    --osc-border-color__hover: grey;
+    --osc-border-radius: 30px;
+
+    --osc-transition-time: 0.3s;
+
+    --osc-height: 500px;
+    --osc-width: 30%;
+    --osc-header-container-height: 380px;
+    --osc-header-container-img-height: 170px;
+
+    --osc-header-container-info-padding: 10px 15px;
+    --osc-header-container-info-blur__hover: 2px;
+    --osc-header-container-info-text-color__hover: white;
+    --osc-header-container-heading-font-size: 40px;
+    --osc-header-container-heading-margin: 10px;
+    --osc-header-container-subtext-font-size: calc(var(--font-size-base) - 4px);
+
+    --osc-bottom-container-padding: 10px 15px;
+    --osc-bottom-time-text-color: grey;
+    --osc-bottom-price-font-size: 30px;
+
+    --osc-bottom-button-background-color: white;
+    --osc-bottom-button-text-color: var(--clr-black);
+    --osc-bottom-button-background-color__hover: var(--clr-black);
+    --osc-bottom-button-text-color__hover: white;
+
+    --osc-bottom-button-padding: 10px 15px;
+    --osc-bottom-button-border-radius: 100px;
+    --osc-bottom-button-border-width: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --osc-border-color: grey;
+        --osc-border-color__hover: var(--clr-light-black);
+
+        --osc-bottom-button-background-color: var(--clr-black);
+        --osc-bottom-button-text-color: white;
+        --osc-bottom-button-background-color__hover: white;
+        --osc-bottom-button-text-color__hover: var(--clr-black);
+    }
+}
+

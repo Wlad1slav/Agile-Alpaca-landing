@@ -1,39 +1,24 @@
-@import "nav.global";
+@import "nav.variables.css";
 
 .nav--button {
-  padding: $nav-button-padding;
-  border-radius: $nav-button-border-radius;
-  border: $nav-button-border-width solid;
-  transition: transform $nav-button-animation-duration ease;
+  padding: var(--nav-button-padding);
+  border-radius: var(--nav-button-border-radius);
+  border: var(--nav-button-border-width) solid;
+  transition: transform var(--nav-button-animation-duration) ease;
 
   &.outline {
-    background-color: $nav-button-outline-background;
+    background-color: var(--nav-button-outline-background);
   }
   &.filling {
-    color: $nav-button-filling-text-color;
-    background-color: $nav-button-filling-background;
+    color: var(--nav-button-filling-text-color);
+    background-color: var(--nav-button-filling-background);
   }
   &.not-noticeable {
-    border-color: $nav-button-not-noticeable-background;
-    background-color: $nav-button-not-noticeable-background;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    color: $dark-theme-nav-button-color;
-    &.outline {
-      background-color: $dark-theme-nav-button-outline-background;
-    }
-    &.filling {
-      color: $dark-theme-nav-button-filling-text-color;
-      background-color: $dark-theme-nav-button-filling-background;
-    }
-    &.not-noticeable {
-      border-color: $dark-theme-nav-button-not-noticeable-background;
-      background-color: $dark-theme-nav-button-not-noticeable-background;
-    }
+    border-color: var(--nav-button-not-noticeable-background);
+    background-color: var(--nav-button-not-noticeable-background);
   }
 
   &:hover {
-    transform: scale($nav-button-scale);
+    transform: scale(var(--nav-button-scale));
   }
 }

@@ -1,0 +1,15 @@
+:root {
+  --testimonials-space-between-sides: 100px;
+  --testimonials-heading2-size: calc(var(--heading2-size) * 1.5);
+  --testimonials-paragraph-size: calc(var(--font-size-base) + 5px);
+  --testimonials-svg-quote-width: 90px;
+  --testimonials-svg-quote-color: var(--clr-black);
+  --testimonials-svg-stars-width: 30px;
+  --testimonials-svg-stars-color: orange;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --testimonials-svg-quote-color: var(--clr-darken-white);
+  }
+}

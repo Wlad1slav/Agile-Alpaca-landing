@@ -1,11 +1,11 @@
-@import "gs.global";
+@import "gs.variables.css";
 
 .get-started--input-field {
   background-color: transparent;
   border: none;
   padding-inline: 5px;
-  height: $gs-components-height;
-  width: $gs-input-field-width;
+  height: var(--gs-components-height);
+  width: var(--gs-input-field-width);
 
   &:focus {
     outline: none;

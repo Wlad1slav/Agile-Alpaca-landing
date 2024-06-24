@@ -1,6 +1,6 @@
-@import "nav.global";
+@import "nav.variables.css";
 
 nav {
   display: flex;
-  gap: $distance-between-navlinks;
+  gap: var(--distance-between-navlinks);
 }

@@ -1,8 +1,8 @@
-@import "gs.global";
+@import "gs.variables.css";
 
 
 .get-started--icon {
-  width: $gs-icon-size;
+  width: var(--gs-icon-size);
   transition: all 0.2s ease;
 
   &.active {

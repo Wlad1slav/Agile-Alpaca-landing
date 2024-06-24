@@ -1,5 +1,4 @@
-@import "../../../stylesheet/global";
-@import "./fixed-header.global";
+@import "fixed-header.variables.css";
 
 .fixed {
   position: fixed;
@@ -7,34 +6,29 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  margin-top: $fixed-header-margin-top;
+  margin-top: var(--fixed-header-margin-top);
 
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: $fixed-header-space-between-elements;
+  gap: var(--fixed-header-space-between-elements);
 
-  padding: $fixed-header-padding;
-  border-radius: $fixed-header-border-radius-left $fixed-header-border-radius-right $fixed-header-border-radius-right $fixed-header-border-radius-left;
+  padding: var(--fixed-header-padding);
+  border-radius:
+          var(--fixed-header-border-radius-left)
+          var(--fixed-header-border-radius-right)
+          var(--fixed-header-border-radius-left)
+          var(--fixed-header-border-radius-right);
 
-  background-color: $fixed-header-background-color;
+  background-color: var(--fixed-header-background-color);
 
-  box-shadow: 0 0 20px $clr-shadow-light;
-  backdrop-filter: blur($fixed-header-background-blur);
+  box-shadow: 0 0 20px var(--fixed-header-box-shadow);
+  backdrop-filter: blur(var(--fixed-header-background-blur));
 
   .nav--button {
-    background-color: $fixed-header-button-color;
+    background-color: var(--fixed-header-button-color);
     border: none;
-    box-shadow: 0 0 5px $fixed-header-box-shadow;
-    border-radius: $fixed-header-border-radius-right;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    background-color: $dark-theme-fixed-header-background-color;
-    box-shadow: 0 0 20px $clr-shadow-dark;
-    .nav--button {
-      color: $clr-black;
-      box-shadow: 0 0 5px $clr-shadow-dark;
-    }
+    box-shadow: 0 0 5px var(--fixed-header-box-shadow);
+    border-radius: var(--fixed-header-border-radius-right);
   }
 }

@@ -1,27 +1,15 @@
-@import "gs.global";
-
 .get-start--button {
   cursor: pointer;
-  height: $gs-components-height;
-  padding-inline: $gs-button-padding-inline;
+  height: var(--gs-components-height);
+  padding-inline: var(--gs-button-padding-inline);
   border: 2px solid;
-  background-color: $gs-button-background;
-  color: $gs-button-color;
-  border-radius: $gs-components-border-radius;
-  transition: all ease $gs-button-animation-duration;
+  background-color: var(--gs-button-background);
+  color: var(--gs-button-color);
+  border-radius: var(--gs-components-border-radius);
+  transition: all ease var(--gs-button-animation-duration);
 
   &:hover {
-    background-color: $gs-button-background_hover;
-    color: $gs-button-color_hover;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    background-color: $dark-theme-gs-button-background;
-    color: $dark-theme-gs-button-color;
-
-    &:hover {
-      background-color: $dark-theme-gs-button-background_hover;
-      color: $dark-theme-gs-button-color_hover;
-    }
+    background-color: var(--gs-button-background-hover);
+    color: var(--gs-button-color-hover);
   }
 }

@@ -1,0 +1,13 @@
+:root {
+    --contrast-background: var(--clr-black);
+    --contrast-text-color: white;
+    --contrast-svg-filling: var(--clr-black);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --contrast-background: white;
+        --contrast-text-color: var(--clr-black);
+        --contrast-svg-filling: white;
+    }
+}

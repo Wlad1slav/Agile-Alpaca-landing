@@ -1,7 +1,9 @@
 import React from "react";
 
-import './styles/positioning.scss';
 import utilGenerationOfMarginCssClasses from "@/app/utils/util.generationOfMarginCssClasses";
+
+import './styles/positioning.variables.css';
+import './styles/positioning.scss';
 
 function Row({children, isContrast, separators, style, margin = {bottom: 'huge'}, id}: Readonly<{
     children: React.ReactNode;

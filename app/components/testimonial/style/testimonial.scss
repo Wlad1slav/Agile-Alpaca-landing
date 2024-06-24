@@ -1,15 +1,15 @@
-@import "testimonial.global";
+@import "testimonial.variables.css";
 
 .testimonial {
   display: flex;
   flex-direction: column;
   gap: 10px;
 
-  padding: $testimonial-padding;
-  background-color: $clr-black;
-  border-radius: $testimonial-border-radius;
+  padding: var(--testimonial-padding);
+  background-color: var(--testimonial-background-color);
+  border-radius: var(--testimonial-border-radius);
 
-  * { color: $clr-darken-white; }
+  * { color: var(--testimonial-text-color); }
 
   .head {
     display: flex;
@@ -17,18 +17,13 @@
     gap: 20px;
 
     img {
-      width: $testimonial-reviewer-photo-width;
+      width: var(--testimonial-reviewer-photo-width);
       border-radius: 100%;
     }
 
     h3 {
       font-weight: 600;
-      font-size: $testimonial-reviewer-name-text-size;
+      font-size: var(--testimonial-reviewer-name-text-size);
     }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    background-color: $dark-theme-testimonial-background-color;
-    * { color: $dark-theme-testimonial-text-color; }
   }
 }

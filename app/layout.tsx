@@ -1,8 +1,9 @@
 import Header from "@/app/components/navigation/Header";
 import Footer from "@/app/components/footer/Footer";
 
+import './stylesheet/variables.css';
 import './stylesheet/app.scss';
-import './stylesheet/app.dark.scss';
+// import './stylesheet/app.dark.scss';
 
 import '../public/favicon.ico';
 

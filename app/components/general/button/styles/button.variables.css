@@ -1,0 +1,22 @@
+:root {
+  --button-padding-standard: 10px 20px;
+  --button-padding-long-inline: 100px;
+
+  --button-border-radius: 100px;
+  --button-border-width: 2px;
+
+  --button-transition-time: 0.2s;
+
+  --button-filling-background-color: var(--clr-black);
+  --button-filling-text-color: white;
+  --button-outline-background-color: transparent;
+  --button-outline-text-color: var(--clr-black);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --button-filling-background-color: var(--clr-darken-white);
+    --button-filling-text-color: var(--clr-black);
+    --button-outline-text-color: var(--clr-darken-white);
+  }
+}

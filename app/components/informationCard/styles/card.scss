@@ -1,120 +1,111 @@
-@import "../../../stylesheet/global";
-@import "../../../stylesheet/animations";
-@import "card.global";
+@import "../../../stylesheet/animations.css";
 
 .info-container {
   position: absolute;
+}
 
-  .front, .back {
+.info-container .front, .info-container .back {
+  display: flex;
+  align-items: center;
+  gap: var(--card-space-between-icon-and-title);
+  transition: all 0.5s ease-in-out;
+
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+
+  h3 {
+    font-size: var(--card-title-size);
+  }
+
+  p.subtitle {
+    font-size: var(--card-subtitle-size);
+  }
+
+  .icon--main {
+    width: var(--card-size-main-icon);
+  }
+}
+
+.info-container .front {
+  box-shadow: 0 20px 20px var(--card-box-shadow-color);
+  background: var(--card-front-background-color);
+
+  .info .title {
     display: flex;
     align-items: center;
-    gap: $card-space-between-icon-and-title;
-    transition: all 0.5s ease-in-out;
-
-    padding: $card-padding;
-    border-radius: $card-border-radius;
-
-    h3 {
-      font-size: $card-title-size;
-    }
-
-    p.subtitle {
-      font-size: $card-subtitle-size;
-    }
-
-    .icon--main {
-      width: $card-size-main-icon;
-    }
-  }
-
-  .front {
-    box-shadow: 0 20px 20px $card-box-shadow-color;
-    background: $card-front-background-color;
-
-    .info {
-      .title {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-    }
-
-    &.icon-near-title {
-      .info {
-        .title {
-          margin-bottom: 10px;
-
-          .icon {
-            width: $card-size-main-icon-near-title;
-          }
-        }
-      }
-    }
-
-    &.icon-top {
-      flex-direction: column;
-    }
-  }
-
-  .back {
-    //display: none;
-    border: 2px solid $clr-black;
-    border-bottom: 4px solid;
-    background: $card-back-background-color;
-  }
-
-  .front, .back {
-    position: absolute;
-    transition: all 0.2s ease-in-out;
-  }
-
-  .back {
-    opacity: 0;
-    transform: translateX(-400%);
-    display: unset;
-  }
-
-  &:hover {
-    .front:not(.no-back) {
-      opacity: 0;
-    }
-
-    .back {
-      opacity: 1;
-      transform: translateX(0);
-      display: unset;
-    }
-  }
-
-  .icons {
-    display: flex;
     gap: 10px;
-    margin-top: $indent-small;
+  }
+
+  &.icon-near-title .info .title {
+    margin-bottom: 10px;
 
     .icon {
-      &:hover {
-        animation: yo-yo 0.4s alternate;
-      }
+      width: var(--card-size-main-icon-near-title);
     }
+  }
+
+  &.icon-top {
+    flex-direction: column;
+  }
+}
+
+.info-container .back {
+  border: 2px solid black;
+  border-bottom: 4px solid;
+  background: var(--card-back-background-color);
+}
+
+.info-container .front, .info-container .back {
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+}
+
+.info-container .back {
+  opacity: 0;
+  transform: translateX(-400%);
+  display: unset;
+}
+
+.info-container:hover .front:not(.no-back) {
+  opacity: 0;
+}
+
+.info-container:hover .back {
+  opacity: 1;
+  transform: translateX(0);
+  display: unset;
+}
+
+.info-container .icons {
+  display: flex;
+  gap: 10px;
+  margin-top: var(--indent-small);
+
+  .icon:hover {
+    animation: yo-yo 0.4s alternate;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-
-  .info-container {
-    .front {
-      background: $dark-theme-card-front-background-color;
-      box-shadow: 0 20px 20px $dark-theme-card-box-shadow-color;
-      p, h1, h2, h3 { color: $dark-theme-card-front-text-color; }
-      .icon--main {
-        fill: $dark-theme-card-color-main-icon;
-      }
-    }
-    .back {
-      background: $dark-theme-card-back-background-color;
-      h3, p { color: $dark-theme-card-back-text-color; }
-      border: none;
-    }
+  .info-container .front {
+    background: var(--card-front-background-color);
+    box-shadow: 0 20px 20px var(--card-box-shadow-color);
   }
 
+  .info-container .front p, .info-container .front h1, .info-container .front h2, .info-container .front h3 {
+    color: var(--card-front-text-color);
+  }
+
+  .info-container .front .icon--main {
+    fill: var(--card-color-main-icon);
+  }
+
+  .info-container .back {
+    background: var(--card-back-background-color);
+    border: none;
+  }
+
+  .info-container .back h3, .info-container .back p {
+    color: var(--card-back-text-color);
+  }
 }

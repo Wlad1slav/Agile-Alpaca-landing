@@ -1,36 +1,34 @@
-@import "./team-member.global";
+@import "team-member.variables.css";
 
 .team-member {
   position: relative;
-  width: $team-member-container-width;
+  width: var(--tm-container-width);
   transition: transform 0.2s ease-in-out;
 
   .info {
     position: absolute;
     bottom: 0;
-    padding: $team-member-info-container-padding;
+    padding: var(--tm-info-container-padding);
     margin: 10px;
 
-    width: $team-member-info-container-width;
+    width: var(--tm-info-container-width);
 
-    background: $team-member-info-container-background-color;
-    backdrop-filter: blur($team-member-info-container-background-blur);
+    background: var(--tm-info-container-background-color);
+    backdrop-filter: blur(var(--tm-info-container-background-blur));
 
-    h3 { font-weight: $team-member-info-container-heading-weight; }
+    h3 { font-weight: var(--tm-info-container-heading-weight); }
 
-    @media (prefers-color-scheme: dark) {
-      h3, p { color: $dark-theme-team-member-info-container-heading-color; }
-    }
+    h3, p { color: var(--tm-info-container-heading-color); }
   }
 
   img {
-    height: $team-member-photo-height;
+    height: var(--tm-photo-height);
     object-fit: cover;
     object-position: center;
-    border-radius: $team-member-photo-border-radius;
+    border-radius: var(--tm-photo-border-radius);
   }
 
   &:hover {
-    transform: $team-member-container-transform__hover;
+    transform: var(--tm-container-transform-hover);
   }
 }

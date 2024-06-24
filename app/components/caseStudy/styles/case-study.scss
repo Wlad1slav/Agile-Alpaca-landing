@@ -1,31 +1,26 @@
-@import "./case-study.global";
+@import "case-study.variables.css";
 
 .case-studies--container {
   display: flex;
   flex-direction: column;
-  gap: $case-study-space-between-elements;
+  gap: var(--cs-st-space-between-elements);
   text-decoration: none;
 
-  border: $case-study-border-width solid $case-study-border-color;
-  padding: $case-study-container-padding;
+  border: var(--cs-st-border-width) solid var(--cs-st-border-color);
+  padding: var(--cs-st-container-padding);
 
   transition: all 0.2s ease-in-out;
 
-  background-color: $case-study-background-color;
+  background-color: var(--cs-st-background-color);
 
   &:hover {
-    background-color: $case-study-background-color_hover;
-    box-shadow: $case-study-shadow_hover;
+    background-color: var(--cs-st-background-color-hover);
+    box-shadow: var(--cs-st-shadow-hover);
   }
 
-  img { max-width: $case-study-image-max-width; }
-  h3, .subtitle { font-weight: $case-study-heading-font-weight; }
-  h3 { font-size: $case-study-heading-font-size; }
-  p:not(.subtitle) { font-size: $case-study-base-font-size; }
-
-  @media (prefers-color-scheme: dark) {
-    background-color: lightgray;
-    &:hover { box-shadow: 5px 15px 25px rgb(80, 80, 80); }
-    h3, p { color: $clr-black; }
-  }
+  img { max-width: var(--cs-st-image-max-width); }
+  h3, .subtitle { font-weight: var(--cs-st-heading-font-weight); }
+  h3 { font-size: var(--cs-st-heading-font-size); }
+  p:not(.subtitle) { font-size: var(--cs-st-base-font-size); }
+  h3, p { color: var(--clr-black); }
 }

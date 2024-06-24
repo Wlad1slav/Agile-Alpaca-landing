@@ -1,5 +1,6 @@
 import utilGenerationOfMarginCssClasses from "@/app/utils/util.generationOfMarginCssClasses";
 
+import './styles/button.variables.css';
 import './styles/button.scss';
 
 function Button({text, buttonStyle='filling', url, margin, size='small', icon}: Readonly<ComponentButtonInterface>) {

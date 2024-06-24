@@ -1,6 +1,4 @@
-@import "global";
-
-.fill--standard { fill: $clr-black; }
+.fill--standard { fill: var(--clr-black); }
 
 /* Logos */
 .fill--wordpress { fill: #32373C; }

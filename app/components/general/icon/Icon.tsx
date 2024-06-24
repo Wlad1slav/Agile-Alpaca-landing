@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../../stylesheet/fills.scss';
+import '../../../stylesheet/fills.css';
 
 interface IconProps {
     fill?: string;

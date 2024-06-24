@@ -1,0 +1,16 @@
+:root {
+    --testimonial-padding: 50px;
+    --testimonial-border-radius: 10px;
+    --testimonial-reviewer-photo-width: 70px;
+    --testimonial-reviewer-name-text-size: calc(var(--heading3-size) + 5px);
+
+    --testimonial-background-color: var(--clr-black);
+    --testimonial-text-color: var(--clr-darken-white);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --testimonial-background-color: var(--clr-darken-white);
+        --testimonial-text-color: var(--clr-black);
+    }
+}

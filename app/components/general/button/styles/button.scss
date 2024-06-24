@@ -1,47 +1,27 @@
-@import 'button.global';
-
 .button {
-  padding: $button-padding-standard;
-  border-radius: $button-border-radius;
-  border: $button-border-width solid $button-filling-background-color;
+  padding: var(--button-padding-standard);
+  border-radius: var(--button-border-radius);
+  border: var(--button-border-width) solid var(--button-filling-background-color);
   text-align: center;
-  &, * {transition: all $button-transition-time ease-in-out;}
+  &, * { transition: all var(--button-transition-time) ease-in-out; }
 
   &.filling {
-    background-color: $button-filling-background-color;
-    &, * {color: $button-filling-text-color;}
+    background-color: var(--button-filling-background-color);
+    &, * { color: var(--button-filling-text-color); }
 
     &:hover {
-      background-color: $button-filling-text-color;
-      &, * {color: $button-filling-background-color;}
-    }
-
-    @media (prefers-color-scheme: dark) {
-      background-color: $dark-theme-button-filling-background-color;
-      border-color: $dark-theme-button-filling-background-color;
-      &, * {color: $dark-theme-button-filling-text-color;}
-
-      &:hover {
-        background-color: $dark-theme-button-filling-text-color;
-        &, * {color: $dark-theme-button-filling-background-color;}
-      }
+      background-color: var(--button-filling-text-color);
+      &, * { color: var(--button-filling-background-color); }
     }
   }
 
   &.outline {
-    background-color: $button-outline-background-color;
-    &, * {color: $button-outline-text-color;}
-    &:hover { box-shadow: 0 10px 20px $clr-shadow-light; }
-
-    @media (prefers-color-scheme: dark) {
-      background-color: $button-outline-background-color;
-      border-color: $dark-theme-button-outline-text-color;
-      &, * {color: $dark-theme-button-outline-text-color;}
-      &:hover { box-shadow: 0 10px 20px $clr-shadow-dark; }
-    }
+    background-color: var(--button-outline-background-color);
+    &, * { color: var(--button-outline-text-color); }
+    &:hover { box-shadow: 0 10px 20px var(--clr-shadow-light); }
   }
 
-  &.long { padding-inline: $button-padding-long-inline; }
+  &.long { padding-inline: var(--button-padding-long-inline); }
 
   span {
     &:hover { transform: scale(1.2); }

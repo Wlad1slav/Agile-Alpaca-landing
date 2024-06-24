@@ -1,6 +1,3 @@
-@import "../../stylesheet/global";
-@import "../../components/getStarted/styles/gs.global";
-
 .get-started {
   display: flex;
   align-items: center;
@@ -10,14 +7,14 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    background-color: $clr-darken-white;
+    background-color: var(--clr-darken-white);
     padding-inline: 10px;
-    border-radius: $gs-components-border-radius;
+    border-radius: var(--gs-components-border-radius);
   }
 
   @media (prefers-color-scheme: dark) {
     .field {
-      background-color: $clr-light-black;
+      background-color: var(--clr-light-black);
     }
   }
 }

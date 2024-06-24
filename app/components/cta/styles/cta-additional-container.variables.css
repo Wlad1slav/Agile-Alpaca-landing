@@ -1,0 +1,16 @@
+:root {
+  --cta-container-space-between-elements: 20px;
+  --cta-container-border-radius: 15px;
+  --cta-container-padding: 20px;
+  --cta-container-shadow-color: var(--clr-shadow-light);
+  --cta-container-icon-width: 40px;
+  --cta-container-heading-font-width: 600;
+  --cta-container-svg-filling: var(--clr-black);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cta-container-shadow-color: var(--clr-shadow-dark);
+    --cta-container-svg-filling: var(--clr-darken-white);
+  }
+}

@@ -1,0 +1,5 @@
+:root {
+  --service-container-width: 33%;
+  --service-container-light-color: rgb(13,13,13);
+  --service-container-dark-color: black;
+}
