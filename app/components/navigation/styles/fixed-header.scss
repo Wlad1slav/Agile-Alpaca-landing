@@ -7,8 +7,10 @@
   transform: translateX(-50%);
   z-index: 1;
   margin-top: var(--fixed-header-margin-top);
+  width: var(--fixed-header-width);
 
   display: flex;
+  flex-direction: var(--fixed-header-flex-direction);
   align-items: center;
   justify-content: center;
   gap: var(--fixed-header-space-between-elements);
@@ -22,7 +24,7 @@
 
   background-color: var(--fixed-header-background-color);
 
-  box-shadow: 0 0 20px var(--fixed-header-box-shadow);
+  box-shadow: 0 0 10px var(--fixed-header-box-shadow);
   backdrop-filter: blur(var(--fixed-header-background-blur));
 
   .nav--button {
@@ -30,5 +32,9 @@
     border: none;
     box-shadow: 0 0 5px var(--fixed-header-box-shadow);
     border-radius: var(--fixed-header-border-radius-right);
+  }
+
+  * {
+    font-size: var(--fixed-header-font-size);
   }
 }

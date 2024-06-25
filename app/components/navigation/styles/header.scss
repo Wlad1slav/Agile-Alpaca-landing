@@ -5,6 +5,11 @@ header {
   align-items: center;
   justify-content: space-between;
 
+  @media only screen and (max-width: 940px) {
+    gap: 20px;
+    flex-direction: column;
+  }
+
   padding: 1% 5%;
 
   a {
@@ -17,6 +22,7 @@ header {
 
   .buttons {
     display: flex;
+    align-items: center;
     gap: var(--distance-between-navlinks);
   }
 }

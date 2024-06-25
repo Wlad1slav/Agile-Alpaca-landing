@@ -1,10 +1,19 @@
-@import "case-studies.global";
+@import "case-studies.variables.css";
 
 .case-studies {
-  .case-studies--container {width: $case-studies-inside-container-width;}
+  .case-studies--container {width: var(--case-studies-inside-container-width);}
 
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: $case-studies-space-between-containers;
+  gap:  var(--case-studies-space-between-containers);
+
+  @media only screen and (max-width: 1205px) {
+    text-align: center;
+    .head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }

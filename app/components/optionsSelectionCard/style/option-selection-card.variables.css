@@ -42,4 +42,16 @@ body.dark-theme {
     --osc-bottom-button-text-color__hover: var(--clr-black);
 }
 
+@media only screen and (max-width: 1344px) {
+    :root {
+        --osc-width: 45%;
+    }
+}
+
+@media only screen and (max-width: 1004px) {
+    :root {
+        --osc-width: 100%;
+    }
+}
+
 

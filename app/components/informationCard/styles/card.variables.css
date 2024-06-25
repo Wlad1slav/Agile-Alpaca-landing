@@ -3,6 +3,7 @@
   --card-padding: 10px;
   --card-border-radius: 15px;
   --card-box-shadow-color: rgba(0,0,0, 0.15);
+  --card-box-max-width: none;
 
   /* indents */
   --card-space-between-icon-and-title: 10px;
@@ -15,6 +16,7 @@
   /* typography */
   --card-title-size: 25px;
   --card-subtitle-size: 14px;
+  --card-box-font-size: var(--font-size-base);
 
   /* icon styles */
   --card-size-main-icon: 50px;
@@ -31,4 +33,36 @@ body.dark-theme {
 
   /* icon styles */
   --card-color-main-icon: var(--clr-black);
+}
+
+@media only screen and (max-width: 1100px) {
+  :root {
+    --card-title-size: 20px;
+    --card-box-max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  :root {
+    --card-box-max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  :root {
+    --card-box-max-width: 250px;
+  }
+}
+
+@media only screen and (max-width: 684px) {
+  :root {
+    --card-box-max-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  :root {
+    --card-box-max-width: 150px;
+    --card-box-font-size: 12px;
+  }
 }

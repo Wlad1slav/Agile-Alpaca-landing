@@ -8,11 +8,18 @@
 .info-container .front, .info-container .back {
   display: flex;
   align-items: center;
+  @media only screen and (max-width: 560px) {
+    flex-direction: column;
+    text-align: center;
+  }
   gap: var(--card-space-between-icon-and-title);
+
   transition: all 0.5s ease-in-out;
 
   padding: var(--card-padding);
   border-radius: var(--card-border-radius);
+
+  max-width: var(--card-box-max-width);
 
   h3 { font-size: var(--card-title-size); }
 
@@ -21,6 +28,8 @@
   .icon--main { width: var(--card-size-main-icon); }
 
   * { color: var(--card-front-text-color); }
+
+  p { font-size: var(--card-box-font-size); }
 }
 
 .info-container .front {

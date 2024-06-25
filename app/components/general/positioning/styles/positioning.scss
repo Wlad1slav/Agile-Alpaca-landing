@@ -1,7 +1,13 @@
 /* Positioning */
 section.row {
+  @media only screen and (max-width: 768px) {
+    padding-inline: 0!important;
+  }
   .column {
     margin-inline: 10%;
+    @media only screen and (max-width: 768px) {
+      margin-inline: 0;
+    }
 
     &.centralized {
       display: flex;

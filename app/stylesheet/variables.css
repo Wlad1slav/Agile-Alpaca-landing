@@ -37,3 +37,12 @@ body.dark-theme {
     --headings-color: white;
     --body-color: var(--clr-black);
 }
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --font-size-base: 15px;
+        --heading1-size: 40px;
+        --heading2-size: 20px;
+        --heading3-size: 18px;
+    }
+}

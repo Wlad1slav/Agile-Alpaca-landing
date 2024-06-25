@@ -6,9 +6,14 @@
   gap: var(--indent-small);
   width: var(--service-container-width);
 
-  padding: 60px 30px;
+  padding: var(--service-container-padding);
 
-  p, h3 { color: white; }
+  p, h3 {
+    color: white;
+    text-align: var(--service-container-text-align);
+  }
+
+  p { font-size: var(--service-container-font-size); }
 
   &.dark {
     background-color: var(--service-container-dark-color);

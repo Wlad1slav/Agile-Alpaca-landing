@@ -16,3 +16,11 @@ body.dark-theme {
   --tm-info-container-heading-color: white;
   --tm-info-container-background-color: rgba(30, 30, 30, 0.8);
 }
+
+@media only screen and (max-width: 536px) {
+  :root {
+    --tm-container-width: 200px;
+    --tm-photo-height: 300px;
+    --tm-info-container-width: 180px;
+  }
+}
