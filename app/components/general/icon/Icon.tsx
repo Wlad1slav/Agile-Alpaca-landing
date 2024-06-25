@@ -5,6 +5,7 @@ import '../../../stylesheet/fills.css';
 interface IconProps {
     fill?: string;
     className?: string;
+    onClick?: () => void;
 }
 
 interface IconInterface {
@@ -12,13 +13,14 @@ interface IconInterface {
 }
 
 const createIcon = (path: JSX.Element, viewBox: string) => (
-    { fill = 'fill--standard', className = '' }: IconProps = {}
+    { fill = 'fill--standard', className = '', onClick }: IconProps = {}
 ) => {
     return (
         <svg
             className={`icon ${fill} ${className}`}
             xmlns="http://www.w3.org/2000/svg"
             viewBox={viewBox}
+            onClick={onClick}
         >
             {path}
         </svg>
@@ -95,7 +97,14 @@ const Icon: IconInterface = {
     star: createIcon(
         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>,
         '0 0 16 16'
-    )
+    ),
+    day: createIcon(
+        <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>,
+        '0 0 16 16'
+    ),
+    night: createIcon(
+        <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>,        '0 0 16 16'
+    ),
 };
 
 export default Icon;

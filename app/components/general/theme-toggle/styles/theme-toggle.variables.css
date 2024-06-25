@@ -1,0 +1,12 @@
+:root {
+    --thm-toggle-button-width: 35px;
+    --thm-toggle-button-background__hover: var(--clr-darken-white);
+    --thm-toggle-icon-color: var(--clr-black);
+    --thm-toggle-icon-color__hover: var(--clr-black);
+}
+
+body.dark-theme {
+    --thm-toggle-button-background__hover: var(--clr-light-black);
+    --thm-toggle-icon-color: white;
+    --thm-toggle-icon-color__hover: white;
+}

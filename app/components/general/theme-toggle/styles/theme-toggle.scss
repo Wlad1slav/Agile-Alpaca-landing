@@ -1,0 +1,21 @@
+@import "theme-toggle.variables.css";
+
+.thm-toggle {
+  cursor: pointer;
+  width: var(--thm-toggle-button-width);
+  height: var(--thm-toggle-button-width);
+  border-radius: 100%;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--thm-toggle-button-background__hover);
+    svg {
+      fill: var(--thm-toggle-icon-color__hover);
+    }
+  }
+
+  svg {
+    padding: 5px;
+    fill: var(--thm-toggle-icon-color);
+  }
+}

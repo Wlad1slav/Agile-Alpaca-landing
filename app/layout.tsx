@@ -3,6 +3,7 @@ import Footer from "@/app/components/footer/Footer";
 
 import './stylesheet/variables.css';
 import './stylesheet/app.scss';
+import './stylesheet/vta-theme-toggle.css';
 
 import '../public/favicon.ico';
 

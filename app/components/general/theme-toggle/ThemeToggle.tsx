@@ -1,7 +1,10 @@
 'use client'
 
 import { useEffect, useState } from "react";
-import { Classic } from "@theme-toggles/react";
+
+import Icon from "@/app/components/general/icon/Icon";
+
+import './styles/theme-toggle.scss';
 
 function ThemeToggle() {
     const [isDark, setIsDark] = useState(false);
@@ -12,7 +15,7 @@ function ThemeToggle() {
         document.body.classList.toggle('dark-theme', savedTheme === 'dark');
     }, []);
 
-    function toggleTheme(): void {
+    function switchTheme(): void {
         const body = document.body;
         const newTheme = isDark ? 'light' : 'dark';
 
@@ -21,15 +24,20 @@ function ThemeToggle() {
         setIsDark(!isDark);
     }
 
+    function toggleTheme(): void {
+        // @ts-ignore
+        if (!document.startViewTransition) {
+            switchTheme();
+            return;
+        }
+        // @ts-ignore
+        document.startViewTransition(switchTheme);
+    }
+
     return (
-        <Classic
-            duration={750}
-            onToggle={toggleTheme}
-            toggled={isDark}
-            placeholder={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
-        />
+        <div className='thm-toggle' onClick={toggleTheme}>
+            { isDark ? <Icon.night /> : <Icon.day /> }
+        </div>
     );
 }
 

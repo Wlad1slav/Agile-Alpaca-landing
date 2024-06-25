@@ -5,6 +5,7 @@ import NavButton from "@/app/components/navigation/NavButton";
 
 import './styles/fixed-header.scss';
 import navigationLinks from "@/app/config/navigation.config";
+import ThemeToggle from "@/app/components/general/theme-toggle/ThemeToggle";
 
 
 function HeaderFixed() {
@@ -18,6 +19,7 @@ function HeaderFixed() {
                     })
                 }
             </NavBar>
+            <ThemeToggle />
             <div className="buttons">
                 <NavButton href='#getStarted' fill={'outline'} text='Get started' />
             </div>
