@@ -30,3 +30,32 @@ body.dark-theme {
   --nav-button-not-noticeable-background: var(--clr-light-black);
 }
 
+@media only screen and (max-width: 420px) {
+  :root {
+    --nav-link-font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  :root {
+    --nav-link-font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  :root {
+    --nav-link-font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  :root {
+    --nav-link-font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  :root {
+    --nav-link-font-size: 9px;
+  }
+}

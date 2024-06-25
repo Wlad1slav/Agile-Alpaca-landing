@@ -11,3 +11,9 @@
 body.dark-theme {
   --testimonials-svg-quote-color: var(--clr-darken-white);
 }
+
+@media only screen and (max-width: 400px) {
+  :root {
+    --testimonials-space-between-sides: 30px;
+  }
+}

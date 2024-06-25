@@ -7,18 +7,21 @@ function Column(
         style,
         margin = {bottom: 'medium'},
         isContentCentralized=false,
-        id
+        id,
+        mobilePaddingMustHave=false
     }: Readonly<{
         children: React.ReactNode;
         style?: {};
         margin?: CssClassMarginInterface;
         isContentCentralized?: boolean;
         id?: string;
+        mobilePaddingMustHave?: boolean;
 }>) {
     const classes = [
         'column',
         utilGenerationOfMarginCssClasses(margin),
-        isContentCentralized ? 'centralized' : ''
+        isContentCentralized ? 'centralized' : '',
+        mobilePaddingMustHave ? 'mobile-mh-pi' : ''
     ];
 
     return (

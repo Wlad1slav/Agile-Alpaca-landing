@@ -15,6 +15,9 @@ footer {
 
   .head, .foot {
     display: flex;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
   .foot {
     justify-content: space-between;
@@ -26,7 +29,6 @@ footer {
 
   .head {
     @media only screen and (max-width: 768px) {
-      flex-direction: column;
       div { border-right: none!important; }
     }
     div {

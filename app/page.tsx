@@ -58,7 +58,7 @@ export default function Home() {
                             mainIconPlace={'left'}
                             position={{
                                 left: "7%",
-                                top: "10%"
+                                top: "20%"
                             }}
                             additionalIcons={[
                                 <Icon.wordpress fill='fill--wordpress' />,
@@ -77,7 +77,7 @@ export default function Home() {
                             mainIcon={<Icon.growUp fill="fill--standard" className="icon--main" />}
                             mainIconPlace={'near-title'}
                             position={{
-                                left: "65%",
+                                left: "55%",
                                 top: "50%"
                             }}
                         >
@@ -90,7 +90,7 @@ export default function Home() {
                             mainIcon={<Icon.hubspot fill="fill--standard" className="icon--main" />}
                             mainIconPlace={'top'}
                             position={{
-                                left: "20%",
+                                left: "10%",
                                 top: "65%"
                             }}
                             width='250px'
@@ -101,7 +101,7 @@ export default function Home() {
                             mainIcon={<Icon.shopify fill="fill--standard" className="icon--main" />}
                             mainIconPlace={'left'}
                             position={{
-                                left: "60%",
+                                left: "50%",
                                 top: "15%"
                             }}
                             width='450px'
@@ -167,7 +167,7 @@ export default function Home() {
                         subtext='Case studies'
                         marginBottom={'medium'}
                         isAbsolute={true}
-                        position={{ left: "0" }}
+                        position={{ left: "1%" }}
                         textAlign={'left'}
                     >
                         Browse <span>our past</span><br /> case studies
@@ -185,7 +185,7 @@ export default function Home() {
                 }}
                 margin={{bottom: 'tiny'}}
             >
-                <Column margin={{bottom: null}}>
+                <Column margin={{bottom: null}} mobilePaddingMustHave={true}>
                     <Heading.h2
                         marginBottom={'medium'}
                         subtext='Already know what you need?'
@@ -199,7 +199,7 @@ export default function Home() {
             </Row>
 
             <Row margin={{bottom: 'medium'}}>
-                <Column id='testimonials' margin={{bottom: 'large'}}>
+                <Column id='testimonials' margin={{bottom: 'large'}} mobilePaddingMustHave={true}>
                     <Testimonials testimonials={testimonials} />
                 </Column>
 

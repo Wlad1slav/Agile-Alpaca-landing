@@ -20,6 +20,7 @@ html {
 body {
   background: var(--body-color);
   overflow-x: hidden;
+  -ms-overflow-x: hidden !important;
 }
 
 #content {
@@ -108,4 +109,10 @@ body.dark-theme {
   &.ml--small { margin-left: var(--indent-small); }
   &.ml--little { margin-left: var(--indent-little); }
   &.ml--tiny { margin-left: var(--indent-tiny); }
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-mh-pi {
+    padding-inline: 1%!important;
+  }
 }

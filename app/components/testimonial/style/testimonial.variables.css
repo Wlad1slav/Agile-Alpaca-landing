@@ -12,3 +12,9 @@ body.dark-theme {
     --testimonial-background-color: var(--clr-darken-white);
     --testimonial-text-color: var(--clr-black);
 }
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --testimonial-border-radius: none;
+    }
+}

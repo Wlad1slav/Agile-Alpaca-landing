@@ -24,3 +24,21 @@ body.dark-theme {
   --gs-button-background-hover: var(--clr-black);
   --gs-button-color-hover: white;
 }
+
+@media only screen and (max-width: 550px) {
+  :root {
+    --gs-input-field-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  :root {
+    --gs-input-field-width: 150px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  :root {
+    --gs-input-field-width: 100px;
+  }
+}
