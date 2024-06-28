@@ -1,0 +1,33 @@
+/* Positioning */
+section.row {
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (max-width: 768px) {
+    padding-inline: 0!important;
+  }
+  .column {
+    margin-inline: 10%;
+    @media only screen and (max-width: 768px) {
+      margin-inline: 0;
+    }
+
+    &.centralized {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .contrast--column {
+    background-color: var(--contrast-background);
+    * { color: var(--contrast-text-color); }
+    svg { fill: var(--contrast-svg-filling) !important; }
+  }
+
+  &.contrast--row {
+    svg {
+      fill: var(--contrast-svg-filling);
+    }
+  }
+}

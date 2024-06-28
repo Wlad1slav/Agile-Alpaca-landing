@@ -1,0 +1,52 @@
+.info-container {
+
+  /* Web Development */
+  &.card1 {
+    left: 10%;
+    top: 25%;
+
+    @media only screen and (max-width: 450px) {
+      left: 7%;
+    }
+    @media only screen and (max-width: 400px) {
+      left: 3%;
+    }
+    @media only screen and (max-width: 350px) {
+      left: 1%;
+    }
+  }
+
+  /* Inbound Marketing */
+  &.card2 {
+    left: 60%;
+    top: 50%;
+    @media only screen and (max-width: 450px) {
+      left: 55%;
+    }
+    @media only screen and (max-width: 400px) {
+      left: 50%;
+    }
+  }
+
+  /* CRM Integration */
+  &.card3 {
+    left: 15%;
+    top: 65%;
+    @media only screen and (max-width: 450px) {
+      left: 2%;
+    }
+    @media only screen and (max-width: 350px) {
+      left: 1%;
+    }
+  }
+
+  /* Development of Shopify stores */
+  &.card4 {
+    left: 60%;
+    top: 15%;
+
+    @media only screen and (max-width: 450px) {
+      left: 50%;
+    }
+  }
+}
