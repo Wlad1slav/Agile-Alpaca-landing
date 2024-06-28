@@ -18,12 +18,7 @@ function CaseStudiesBlock({caseStudies}: Readonly<{
 
                     return <CaseStudy
                         translateY={translateY}
-                        title={value.title}
-                        text={value.text}
-                        subtitle={value.subtitle}
-                        imageLink={value.imageLink}
-                        imageAlt={value.imageAlt}
-                        pageLink={value.pageLink}
+                        {...value}
                     />
                 })
             }
