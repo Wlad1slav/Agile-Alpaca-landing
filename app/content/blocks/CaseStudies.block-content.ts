@@ -12,17 +12,17 @@ const caseStudies: Array<CaseStudyProps> = [
         pageLink: 'https://westernbid.com/',
         imageLink: 'https://cdn.prod.website-files.com/646a0068ffc7d3ef567e9d3d/647b9ac4017a9563bc27a5e1_nav_logo.svg'
     },{
-        title: 'ManzCPA',
-        subtitle: 'California Accounting Services',
-        text: 'Handled concept creation, design, website development, and seamless CRM integration.',
-        pageLink: 'https://manzcpa.com/',
-        imageLink: 'https://manzcpa.com/wp-content/uploads/2023/07/LogoMANZCPA_Black-400px.png'
-    },{
         title: 'Dumarko Vintage Watches',
         subtitle: 'Shopify Store Development',
         text: 'Ongoing project focused on search engine optimization and strategic digital consulting.',
         pageLink: 'https://dumarko.com/',
         imageLink: '/images/pages/case-studies/dumarko.webp'
+    },{
+        title: 'Xpel1',
+        subtitle: 'American shipping company',
+        text: 'Website development, including its SEO optimization and blog content.',
+        pageLink: 'https://xpel1.com/',
+        imageLink: '/images/pages/case-studies/Xpel1-logo.webp'
     },{
         title: 'Good Life Group',
         subtitle: 'Comprehensive Website Solutions',
