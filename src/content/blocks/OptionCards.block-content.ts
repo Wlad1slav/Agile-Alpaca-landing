@@ -11,7 +11,7 @@ export const optionCardsBlockContent: Array<OptionSelectionCardProps> = [
         title: 'Account-Based Marketing',
         subText: 'TARGETED AND PERSONALIZED CAMPAIGNS',
         text: 'Customized marketing strategies to engage high-value accounts and drive better ROI',
-        imgUrl: '/images/pages/services/Flip-the-Funnel-1024x485.webp',
+        imgUrl: '/images/pages/services/Копия strategy-791200.webp',
         price: 499,
         priceWithOutDiscount: 699,
         priceLabel: 'Per Project'
@@ -19,7 +19,7 @@ export const optionCardsBlockContent: Array<OptionSelectionCardProps> = [
         title: 'Inbound Marketing',
         subText: 'ATTRACT, ENGAGE, AND DELIGHT',
         text: 'Creating content and campaigns that attract potential customers and convert them into loyal clients',
-        imgUrl: '/images/pages/services/inbound-vs-outbound-marketing-strategies.webp',
+        imgUrl: '/images/pages/services/Копия pexels-metadizayn-1058100.webp',
         price: 249,
         priceWithOutDiscount: 349,
         priceLabel: 'Monthly'
@@ -27,7 +27,7 @@ export const optionCardsBlockContent: Array<OptionSelectionCardProps> = [
         title: 'CRM Integration',
         subText: 'SEAMLESS CUSTOMER MANAGEMENT',
         text: 'Integrating robust CRM systems to streamline customer interactions and improve',
-        imgUrl: '/images/pages/services/crm-overview.webp',
+        imgUrl: '/images/pages/services/customer-relationship-management-concept-2.webp',
         price: 199,
         priceWithOutDiscount: 249,
         priceLabel: 'Per Integration'
@@ -43,7 +43,7 @@ export const optionCardsBlockContent: Array<OptionSelectionCardProps> = [
         title: 'Advertising',
         subText: 'REACH YOUR AUDIENCE EFFECTIVELY',
         text: 'Crafting impactful ad campaigns across various platforms to boost your brand visibility and sales',
-        imgUrl: 'https://static.semrush.com/blog/uploads/media/8b/06/8b063f735e2192a61c6861f4755ffc5d/what-is-digital-advertising.svg',
+        imgUrl: '/images/pages/services/pexels-markusspiske-3806747.webp',
         price: 599,
         priceWithOutDiscount: 799,
         priceLabel: 'Monthly'
