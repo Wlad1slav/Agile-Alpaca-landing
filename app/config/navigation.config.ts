@@ -1,4 +1,4 @@
-const navigationLinks: Array<ComponentNavLinkInterface> = [
+const navigationLinks: Array<NavLinkProps> = [
     {
         text: 'Services',
         href: 'services'
@@ -12,7 +12,7 @@ const navigationLinks: Array<ComponentNavLinkInterface> = [
         href: 'testimonials'
     },
     {
-        text: 'Our team',
+        text: 'Our Team',
         href: 'ourTeam'
     },
 ];

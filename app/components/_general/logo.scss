@@ -1,0 +1,11 @@
+@import '../_navigation/styles/nav.variables.css';
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  img {
+    width: var(--logo-size);
+    height: var(--logo-size);
+  }
+}

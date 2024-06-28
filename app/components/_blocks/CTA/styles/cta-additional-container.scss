@@ -1,0 +1,33 @@
+@import "cta-additional-container.variables.css";
+
+.cta--additional-container {
+  @media only screen and (max-width: 1031px) {
+    display: none;
+  }
+  display: flex;
+  flex-direction: column;
+  gap: var(--cta-container-space-between-elements);
+  border-radius: var(--cta-container-border-radius);
+
+  padding: var(--cta-container-padding);
+
+  box-shadow: 0 0 20px var(--cta-container-shadow-color);
+
+  svg { fill: var(--cta-container-svg-filling); }
+
+  .head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    svg { width: var(--cta-container-icon-width); }
+    h3 { font-weight: var(--cta-container-heading-font-width); }
+  }
+
+  ul {
+    list-style: unset;
+    padding-left: 15px;
+  }
+
+  //&.left { transform: rotate(-10deg); }
+  //&.right { transform: rotate(10deg); }
+}

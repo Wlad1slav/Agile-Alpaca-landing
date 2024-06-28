@@ -1,0 +1,37 @@
+@import "team-member.variables.css";
+
+.team-member {
+  position: relative;
+  width: var(--tm-container-width);
+  transition: transform 0.2s ease-in-out;
+  outline: 2px solid var(--clr-black);
+  border-radius: var(--tm-photo-border-radius);
+  box-shadow: var(--tm-container-shadow);
+
+  .info {
+    position: absolute;
+    bottom: 0;
+    padding: var(--tm-info-container-padding);
+    margin: 10px;
+
+    width: var(--tm-info-container-width);
+
+    background: var(--tm-info-container-background-color);
+    backdrop-filter: blur(var(--tm-info-container-background-blur));
+
+    h3 { font-weight: var(--tm-info-container-heading-weight); }
+
+    h3, p { color: var(--tm-info-container-heading-color); }
+  }
+
+  img {
+    height: var(--tm-photo-height);
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--tm-photo-border-radius);
+  }
+
+  &:hover {
+    transform: var(--tm-container-transform-hover);
+  }
+}

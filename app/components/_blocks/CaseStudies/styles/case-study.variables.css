@@ -1,0 +1,78 @@
+:root {
+    --cs-st-height: 250px;
+    --cs-st-space-between-elements: 20px;
+    --cs-st-border-width: 2px;
+    --cs-st-border-color: black;
+    --cs-st-container-padding: 20px;
+    --cs-st-background-color: rgb(240, 240, 240);
+    --cs-st-background-color-hover: white;
+    --cs-st-shadow-hover: 5px 15px 25px rgb(150, 150, 150);
+    --cs-st-image-max-width: 40%;
+    --cs-st-heading-font-weight: 600;
+    --cs-st-heading-font-size: calc(var(--heading3-size) + 5px);
+    --cs-st-heading-logo-height: 50px;
+    --cs-st-base-font-size: calc(var(--font-size-base) - 2px);
+    --cs-st-text-color: var(--clr-black);
+}
+
+body.dark-theme {
+    --cs-st-shadow-hover: 5px 15px 25px rgb(80, 80, 80);
+    --cs-st-background-color: lightgray;
+}
+
+@media only screen and (max-width: 1850px) {
+    :root {
+        --cs-st-height: 300px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    :root {
+        --cs-st-height: 350px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    :root {
+        --cs-st-height: 370px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    :root {
+        --cs-st-height: 400px;
+        --cs-st-heading-font-size: var(--heading3-size);
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    :root {
+        --cs-st-height: 430px;
+        --cs-st-heading-font-size: var(--heading3-size);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --cs-st-container-padding: 5px;
+        --cs-st-space-between-elements: 5px;
+        --cs-st-height: 250px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    :root {
+        --cs-st-container-padding: 5px;
+        --cs-st-space-between-elements: 5px;
+        --cs-st-height: 300px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    :root {
+        --cs-st-container-padding: 5px;
+        --cs-st-space-between-elements: 5px;
+        --cs-st-height: 330px;
+        --cs-st-heading-font-size: 15px;
+    }
+}

@@ -1,25 +1,25 @@
 import React from "react";
 
-import Separator from "@/app/components/general/separator/Separator";
-import Row from "@/app/components/general/positioning/Row";
-import Column from "@/app/components/general/positioning/Column";
-import Icon from "@/app/components/general/icon/Icon";
-import Heading from "@/app/components/general/heading/Heading";
-import InformationCard from "@/app/components/informationCard/InformationCard";
-import CallToAction from "@/app/components/cta/CallToAction";
+import Separator from "@/app/components/_general/separator/Separator";
+import Row from "@/app/components/_general/positioning/Row";
+import Column from "@/app/components/_general/positioning/Column";
+import Icon from "@/app/components/_general/icon/Icon";
+import Heading from "@/app/components/_general/heading/Heading";
+import InformationCard from "@/app/components/InformationCard/InformationCard";
+import CallToActionBlock from "@/app/components/_blocks/CTA/CallToActionBlock";
 
-import ServicesModule from "@/app/modules/services/ServicesModule";
-import GetStartedModule from "@/app/modules/getStarted/GetStartedModule";
-import Team from "@/app/modules/team/Team";
-import Testimonials from "@/app/modules/testimonials/Testimonials";
-import OptionSelectionCards from "@/app/modules/optionSelectionCards/OptionSelectionCards";
-import CaseStudiesModule from "@/app/modules/caseStudies/CaseStudiesModule";
+import ServicesBlock from "@/app/components/_blocks/Services/ServicesBlock";
+import GetStartedBlock from "@/app/components/_blocks/GetStarted/GetStartedBlock";
+import TeamBlock from "@/app/components/_blocks/Team/TeamBlock";
+import TestimonialsBlock from "@/app/components/_blocks/Testimonials/TestimonialsBlock";
+import OptionSelectionCardsBlock from "@/app/components/_blocks/OptionSelectionCards/OptionSelectionCardsBlock";
+import CaseStudiesBlock from "@/app/components/_blocks/CaseStudies/CaseStudiesBlock";
 
-import caseStudies from "@/app/config/caseStudies.config";
-import {services} from "@/app/config/services.config";
-import {teamConfig} from "@/app/config/team.config";
-import {optionCards} from "@/app/config/optionCards";
-import testimonials from "@/app/config/testimonials.config";
+import caseStudies from "@/app/content/blocks/CaseStudies.block-content";
+import {services} from "@/app/content/blocks/Services.block-content";
+import {teamBlockContent} from "@/app/content/blocks/Team.block-content";
+import {optionCardsBlockContent} from "@/app/content/blocks/OptionCards.block-content";
+import testimonials from "@/app/content/blocks/Testimonials.block-content";
 import {baseUrl, metaDataConfig} from "@/app/config/metaData.config";
 
 export async function generateMetadata() {
@@ -45,7 +45,7 @@ export default function Home() {
                         <p style={{textAlign: "center", width: "60%"}}>Build Your Audience & Get Devoted Customers with Agile Alpaca, Marketing Agency Targeted at Human Relationships</p>
                     </div>
 
-                    <GetStartedModule />
+                    <GetStartedBlock />
                 </div>
 
                 <Column>
@@ -116,11 +116,11 @@ export default function Home() {
                         Services we <span>can do</span> for you
                     </Heading.h2>
 
-                    <ServicesModule services={services} />
+                    <ServicesBlock services={services} />
                 </Column>
 
-                <Column isContentCentralized={true} style={{marginInline: "5%"}}>
-                    <CallToAction
+                <Column isContentCentralized={true} style={{marginInline: "1%"}}>
+                    <CallToActionBlock
                         heading='Let’s Craft a Winning Marketing & Sales Journey Together!'
                         text='Hey there! We’re Agile Alpaca, your friendly neighborhood marketing agency, dedicated to creating
                         tailor-made strategies for every client, regardless of industry or niche. Dive in to learn more about
@@ -131,27 +131,27 @@ export default function Home() {
                             rotate: 'left',
                             headIcon: <Icon.web />,
                             headHeading: 'Development of your site',
-                            subtext: 'We will develop a presentable website for you according to your needs.',
+                            subtext: 'Streamlined site development for seamless online presence.',
                             list: [
-                                'Lorem ipsum dolor sit amet',
-                                'Lorem ipsum dolor sit amet',
-                                'Lorem ipsum dolor sit amet',
-                                'Lorem ipsum dolor sit amet',
-                                'Lorem ipsum dolor sit amet',
+                                'Custom web design to fit your brand',
+                                'Responsive layouts for all devices',
+                                'CRM system integration for efficiency',
+                                'SEO optimization to boost search rankings',
+                                'Secure hosting and ongoing maintenance',
                             ],
                             buttonUrl: '/'
                         }}
                         ctaContainerRight={{
                             rotate: 'right',
-                            headIcon: <Icon.web />,
-                            headHeading: 'Development of your site',
-                            subtext: 'We will develop a presentable website for you according to your needs.',
+                            headIcon: <Icon.shopify />,
+                            headHeading: 'Help in creating a Shopify store',
+                            subtext: 'Effortlessly create and manage your Shopify store with our expert services.',
                             list: [
-                                'Lorem ipsum dolor sit amet',
-                                'Lorem ipsum dolor sit amet',
-                                'Lorem ipsum dolor sit amet',
-                                'Lorem ipsum dolor sit amet',
-                                'Lorem ipsum dolor sit amet',
+                                'Unique themes to match your brand',
+                                'Efficient product listings and inventory',
+                                'Boost visibility with SEO',
+                                'Secure payments and easy shipping',
+                                'Continuous updates and support',
                             ],
                             buttonUrl: '/'
                         }}
@@ -173,7 +173,7 @@ export default function Home() {
                         Browse <span>our past</span><br /> case studies
                     </Heading.h2>
 
-                    <CaseStudiesModule caseStudies={caseStudies} />
+                    <CaseStudiesBlock caseStudies={caseStudies} />
                 </Column>
             </Row>
 
@@ -194,20 +194,20 @@ export default function Home() {
                         <span>Choose a service</span>
                     </Heading.h2>
 
-                    <OptionSelectionCards cards={optionCards} />
+                    <OptionSelectionCardsBlock cards={optionCardsBlockContent} />
                 </Column>
             </Row>
 
             <Row margin={{bottom: 'medium'}}>
                 <Column id='testimonials' margin={{bottom: 'large'}} mobilePaddingMustHave={true}>
-                    <Testimonials testimonials={testimonials} />
+                    <TestimonialsBlock testimonials={testimonials} />
                 </Column>
 
                 <Column id='ourTeam' margin={{bottom: 'large'}}>
                     <Heading.h2 marginBottom={'medium'}>
                         <span>Out Team</span>
                     </Heading.h2>
-                    <Team team={teamConfig} />
+                    <TeamBlock team={teamBlockContent} />
                 </Column>
             </Row>
         </>

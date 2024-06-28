@@ -1,0 +1,17 @@
+:root {
+  --case-studies-inside-container-width: 32%;
+  --case-studies-space-between-containers: 10px;
+}
+
+@media only screen and (max-width: 906px) {
+  :root {
+    --case-studies-space-between-containers: 0;
+    /*--case-studies-inside-container-width: auto;*/
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --case-studies-inside-container-width: 33%;
+  }
+}

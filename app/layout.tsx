@@ -1,5 +1,5 @@
-import Header from "@/app/components/navigation/Header";
-import Footer from "@/app/components/footer/Footer";
+import Header from "@/app/components/_navigation/Header";
+import Footer from "@/app/components/Footer/Footer";
 
 import './stylesheet/variables.css';
 import './stylesheet/app.scss';

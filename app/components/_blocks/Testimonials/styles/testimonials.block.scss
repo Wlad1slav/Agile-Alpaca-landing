@@ -1,0 +1,48 @@
+@import "testimonials.block.variables.css";
+
+.testimonials {
+  display: flex;
+  gap: var(--testimonials-space-between-sides);
+  @media only screen and (max-width: 1004px) {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: var(--testimonials-heading2-size);
+  }
+
+  .side {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @media only screen and (max-width: 768px) {
+      gap: 10px;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .quote {
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    p { font-size: var(--testimonials-paragraph-size); }
+    svg {
+      width: var(--testimonials-svg-quote-width);
+      margin-left: -15px;
+      fill: var(--testimonials-svg-quote-color);
+    }
+  }
+
+  .stars {
+    display: flex;
+    gap: 5px;
+    svg {
+      width: var(--testimonials-svg-stars-width);
+      fill: var(--testimonials-svg-stars-color);
+    }
+  }
+}

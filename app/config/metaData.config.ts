@@ -5,7 +5,7 @@ export const metaDataConfig: {
 } = {
     homepage: {
         title: 'Agile Alpaca Agency | Build Your Audience and Get Devoted Customers',
-        metaDescription: 'Discover Agile Alpaca Marketing Agency, where we build trust and help you gain devoted customers through strategic marketing, web development, and tailored solutions. Explore our services, case studies, and testimonials to see how we can enhance your business.',
+        metaDescription: 'Build trust and gain devoted customers with Agile Alpaca, a marketing agency dedicated to human relationships. Our services include web development, CRM integration, inbound marketing, account-based marketing, and creating Shopify stores. Let us craft a winning marketing and sales journey for you. Contact us today!',
         pageImageUrl: '/images/pages/alpaca_on_the_background_of_the_retro_miami_sun.webp'
     }
 }
