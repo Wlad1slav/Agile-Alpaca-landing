@@ -4,13 +4,11 @@ const points = {
     '\n': '<br>'
 }
 
-function stringFormat(text: string) {
-    const keys = Object.keys(points);
-
+function stringFormat(text: string): string {
     let result = text;
 
-    for (const key of keys) {
-        result = result.replace(key, points[key]);
+    for (const [key, value] of Object.entries(points)) {
+        result = result.split(key).join(value);
     }
 
     return result;
