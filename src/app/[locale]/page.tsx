@@ -13,6 +13,7 @@ import HomePageRowTestimonialsAndTeam from "@/components/_pages/home/RowTestimon
 /* Separate page styles */
 import '../../components/_pages/home/style.scss';
 import {unstable_setRequestLocale} from "next-intl/server";
+import {useTranslations} from "next-intl";
 
 export async function generateMetadata() {
     return {
@@ -27,14 +28,8 @@ export async function generateMetadata() {
     };
 }
 
-type HomeProps = {
-    params: {
-        locale: string;
-    };
-};
-
-export default async function Home({ params: { locale } }: HomeProps) {
-    await unstable_setRequestLocale(locale);
+export default async function Home({ params: { locale } }: LocalProps) {
+    await unstable_setRequestLocale('en');
 
     return (
         <>

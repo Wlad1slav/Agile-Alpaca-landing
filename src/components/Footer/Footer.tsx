@@ -5,9 +5,10 @@ import FooterHeadBlock from "@/components/Footer/FooterHeadBlock";
 import footerConfig from "@/config/footer.config";
 
 import './style/footer.scss';
+import {unstable_setRequestLocale} from "next-intl/server";
 
 function Footer() {
-    // @ts-ignore
+    unstable_setRequestLocale('en');
     const localisationFooter = useTranslations('Footer');
     const footer = footerConfig(localisationFooter);
 

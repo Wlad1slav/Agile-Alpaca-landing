@@ -9,8 +9,10 @@ import React from "react";
 import {useTranslations} from "next-intl";
 import parse from "html-react-parser";
 import stringFormat from "@/utils/stringFormat";
+import {unstable_setRequestLocale} from "next-intl/server";
 
 function HomePageRowTestimonialsAndTeam() {
+    unstable_setRequestLocale('en');
     const localisationTestimonials = useTranslations('BlockTestimonials');
     const localisationTeam = useTranslations('BlockTeam');
 
@@ -28,7 +30,7 @@ function HomePageRowTestimonialsAndTeam() {
                 <Heading.h2 marginBottom={'medium'} subtext={localisationTeam('heading.subheading')}>
                     {parse(stringFormat(localisationTeam('heading.text')))}
                 </Heading.h2>
-                <TeamBlock team={teamBlockContent(localisationTeam)} />
+                <TeamBlock team={teamBlockContent(localisationTeam)}/>
             </Column>
         </Row>
     )

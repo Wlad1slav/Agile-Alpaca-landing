@@ -8,16 +8,18 @@ import React from "react";
 import {useTranslations} from "next-intl";
 import parse from "html-react-parser";
 import stringFormat from "@/utils/stringFormat";
+import {unstable_setRequestLocale} from "next-intl/server";
 
 function HomePageRowServicesCard() {
+    unstable_setRequestLocale('en');
     const localisationServiceCards = useTranslations('BlockServiceCards');
 
     return (
         <Row
             isContrast={true}
             separators={{
-                top: <Separator.WaveTop />,
-                bottom: <Separator.WaveBottom />,
+                top: <Separator.WaveTop/>,
+                bottom: <Separator.WaveBottom/>,
             }}
             margin={{bottom: 'tiny'}}
         >
@@ -30,7 +32,7 @@ function HomePageRowServicesCard() {
                     {parse(stringFormat(localisationServiceCards('heading.text')))}
                 </Heading.h2>
 
-                <ServiceCards cards={serviceCardsBlockContent(localisationServiceCards)} />
+                <ServiceCards cards={serviceCardsBlockContent(localisationServiceCards)}/>
             </Column>
         </Row>
     );

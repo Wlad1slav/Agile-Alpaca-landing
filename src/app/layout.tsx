@@ -7,11 +7,11 @@ import '@/stylesheet/vta-theme-toggle.css';
 import {getMessages, unstable_setRequestLocale} from "next-intl/server";
 
 
-// const locales = ['en', 'ua', 'crt'];
-//
-// export function generateStaticParams() {
-//     return locales.map((locale) => ({locale}));
-// }
+const locales = ['en', 'ua', 'crt'];
+
+export function generateStaticParams() {
+    return locales.map((locale) => ({locale}));
+}
 
 export default async function RootLayout({ children, params: {locale} }: {
     children: React.ReactNode;

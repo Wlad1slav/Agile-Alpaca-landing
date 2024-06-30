@@ -4,10 +4,11 @@ import navigationLinks from "@/config/navigation.config";
 import HeaderStatic from "@/components/Header/HeaderStatic";
 import HeaderFixed from "@/components/Header/HeaderFixed";
 import NavButton from "@/components/Header/NavButton";
+import {unstable_setRequestLocale} from "next-intl/server";
 
 function Header() {
 
-    // @ts-ignore
+    unstable_setRequestLocale('en');
     const localisationHeader = useTranslations('Header');
     const navigation = navigationLinks(localisationHeader);
 

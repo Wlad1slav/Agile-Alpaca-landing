@@ -9,8 +9,10 @@ import Icon from "@/components/_general/icon/Icon";
 import Row from "@/components/_general/positioning/Row";
 import React from "react";
 import {useTranslations} from "next-intl";
+import {unstable_setRequestLocale} from "next-intl/server";
 
 function HomePageRowServicesAndCTA() {
+    unstable_setRequestLocale('en');
     const localisationServices = useTranslations('BlockServices');
     const localisationCta = useTranslations('BlockCTA');
 
@@ -21,7 +23,7 @@ function HomePageRowServicesAndCTA() {
                     {parse(stringFormat(localisationServices('heading.text')))}
                 </Heading.h2>
 
-                <ServicesBlock services={services(localisationServices)} />
+                <ServicesBlock services={services(localisationServices)}/>
             </Column>
 
             <Column isContentCentralized={true} style={{marginInline: "1%"}}>
@@ -32,7 +34,7 @@ function HomePageRowServicesAndCTA() {
                     buttonText={localisationCta('button')}
                     ctaContainerLeft={{
                         rotate: 'left',
-                        headIcon: <Icon.web />,
+                        headIcon: <Icon.web/>,
                         headHeading: localisationCta('leftContainer.heading'),
                         subtext: localisationCta('leftContainer.subtext'),
                         list: localisationCta('leftContainer.list').split('.'),
@@ -40,7 +42,7 @@ function HomePageRowServicesAndCTA() {
                     }}
                     ctaContainerRight={{
                         rotate: 'right',
-                        headIcon: <Icon.shopify />,
+                        headIcon: <Icon.shopify/>,
                         headHeading: localisationCta('rightContainer.heading'),
                         subtext: localisationCta('rightContainer.subtext'),
                         list: localisationCta('rightContainer.list').split('.'),
