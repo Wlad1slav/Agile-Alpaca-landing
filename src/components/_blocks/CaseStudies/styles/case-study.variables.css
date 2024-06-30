@@ -22,7 +22,7 @@ body.dark-theme {
 
 @media only screen and (max-width: 1850px) {
     :root {
-        --cs-st-height: 300px;
+        --cs-st-height: 310px;
     }
 }
 

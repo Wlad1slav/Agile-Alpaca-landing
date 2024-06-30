@@ -1,0 +1,268 @@
+{
+  "Header": {
+    "navigation": {
+      "link1": "Services",
+      "link2": "Case Studies",
+      "link3": "Testimonials",
+      "link4": "Team"
+    },
+    "cta": {
+      "default": "Get Started",
+      "contact": "Contact Us"
+    }
+  },
+
+  "Footer": {
+    "blocks": {
+      "block1": "Contacts",
+      "block2": "Our services",
+      "block3": "We are on social networks"
+    },
+    "services": {
+      "service1": "Web development",
+      "service2": "Account-Based Marketing",
+      "service3":  "Creating a Shopify store",
+      "service4": "Inbound Marketing",
+      "service5":  "CRM Integration",
+      "service6": "Marketing Strategy",
+      "service7":  "Advertising"
+    },
+    "description": "Agile Alpaca is a marketing agency focused on building trust and gaining devoted customers through personalized web development, CRM integration, inbound marketing, and e-commerce solutions. Let's craft a winning marketing and sales journey together!"
+  },
+
+  "HomePageHead": {
+    "heading": "Build Trust, Gain Devoted Customers",
+    "text": "Build Your Audience & Get Devoted Customers with Agile Alpaca, Marketing Agency Targeted at Human Relationships",
+    "infoCards": {
+      "card1": {
+        "title": "Web Development",
+        "subtitle": "A site for your business",
+        "text": "Let’s bring that dream to life! We craft beautiful websites with love, backed by thorough UX research and tailored designs."
+      },
+      "card2": {
+        "title": "Inbound Marketing",
+        "subtitle": "",
+        "text": "Feeling like you’re not catching enough leads? Don’t worry! We’re here to sprinkle some magic with strategic inbound marketing, account-based marketing, and digital advertising."
+      },
+      "card3": {
+        "title": "CRM Integration",
+        "subtitle": "",
+        "text": ""
+      },
+      "card4": {
+        "title": "Development of Shopify stores",
+        "subtitle": "",
+        "text": ""
+      }
+    }
+  },
+
+  "BlockServices": {
+    "heading": {
+      "text": "Services we **can do*/ for you",
+      "subheading": "OUR SERVICES"
+    },
+    "services": {
+      "service1" : {
+        "name": "CRM Integration",
+        "description": "Feeling like you need a CRM that truly understands your company? We’re here to help!"
+      },
+      "service2" : {
+        "name": "Web Development",
+        "description": "Get a modern, responsive website with our cutting-edge web development ServiceContainer. Act now!"
+      },
+      "service3" : {
+        "name": "Lead Generation",
+        "description": "Boost your business with our expert lead generation ServiceContainer — start attracting quality leads now!"
+      },
+      "service4" : {
+        "name": "Account-Based Marketing",
+        "description": "Elevate your B2B strategy with our modern, responsive Account Based Marketing ServiceContainer — start today!"
+      },
+      "service5" : {
+        "name": "Marketing Strategy",
+        "description": "Boost your brand with our Tailored Marketing Expansion Strategy — grow your business today!"
+      },
+      "service6" : {
+        "name": "Marketing Solutions",
+        "description": "Unlock success with premier online marketing solutions to elevate your brand's visibility!"
+      },
+      "service7" : {
+        "name": "Creating a Shopify store",
+        "description": "Launch your Shopify store effortlessly with our expert setup service — Start selling today!"
+      },
+      "service8" : {
+        "name": "Optimized sites",
+        "description": "Creating your site with SEO optimization using Next.js and WordPress plugins."
+      },
+      "service9" : {
+        "name": "E-commerce Solutions",
+        "description": "Revamp your online store with our E-commerce Solutions for success in the digital market!"
+      }
+    }
+  },
+
+  "BlockServiceCards": {
+    "heading": {
+      "text": "**Choose A Service*/",
+      "subheading": "ALREADY KNOW WHAT YOU NEED?"
+    },
+    "services": {
+      "service1": {
+        "title": "Web development",
+        "subtext": "Quickly, qualitatively, efficiently",
+        "text": "Development of user-friendly sites and landing pages using modern designs and time-tested technologies",
+        "priceLabel": "Per Hour"
+      },
+      "service2": {
+        "title": "Account-Based Marketing",
+        "subtext": "",
+        "text": "Customized marketing strategies to engage high-value accounts and drive better ROI",
+        "priceLabel": "Per Project"
+      },
+      "service3": {
+        "title": "Inbound Marketing",
+        "subtext": "ATTRACT, ENGAGE, AND DELIGHT",
+        "text": "Creating content and campaigns that attract potential customers and convert them into loyal clients",
+        "priceLabel": "Monthly"
+      },
+      "service4": {
+        "title": "CRM Integration",
+        "subtext": "SEAMLESS CUSTOMER MANAGEMENT",
+        "text": "Integrating robust CRM systems to streamline customer interactions and improve",
+        "priceLabel": "Per Integration"
+      },
+      "service5": {
+        "title": "Marketing Strategy",
+        "subtext": "GROWTH THROUGH CUSTOMIZED STRATEGIES",
+        "text": "Developing personalized marketing strategies to expand your market reach and achieve business goals",
+        "priceLabel": "Per Project"
+      },
+      "service6": {
+        "title": "Advertising",
+        "subtext": "REACH YOUR AUDIENCE EFFECTIVELY",
+        "text": "Crafting impactful ad campaigns across various platforms to boost your brand visibility and sales",
+        "priceLabel": "Monthly"
+      }
+    }
+  },
+
+  "BlockCTA": {
+    "heading": "Let’s Craft a Winning Marketing & Sales Journey Together!",
+    "text": "Hey there! We’re Agile Alpaca, your friendly neighborhood marketing agency, dedicated to creating tailor-made strategies for every client, regardless of industry or niche. Dive in to learn more about our unique touch!",
+    "button": "Contact us",
+    "leftContainer": {
+      "heading": "Development of your site",
+      "subtext": "Streamlined site development for seamless online presence.",
+      "list": "Custom web design to fit your brand. Responsive layouts for all devices. CRM system integration for efficiency. SEO optimization to boost search rankings. Secure hosting and ongoing maintenance"
+    },
+    "rightContainer": {
+      "heading": "Help in creating a Shopify store",
+      "subtext": "Effortlessly create and manage your Shopify store with our expert services.",
+      "list": "Unique themes to match your brand. Efficient product listings and inventory. Boost visibility with SEO. Secure payments and easy shipping. Continuous updates and support"
+    }
+  },
+
+  "BlockCaseStudies": {
+    "heading": {
+      "text": "Browse **Our Past*/\nCase Studies",
+      "subtext": "CASE STUDIES"
+    },
+    "caseStudies": {
+      "cs1": {
+        "title": "Impala freight",
+        "subtitle": "Comprehensive Website Solutions",
+        "description": "Provided comprehensive design, engaging copywriting, and developed a fully functional website."
+      },
+      "cs2": {
+        "title": "Western Bid",
+        "subtitle": "International E-commerce Solutions",
+        "description": "Conceptualized and continuously supported multiple versions of their website since 2019."
+      },
+      "cs3": {
+        "title": "Dumarko Vintage Watches",
+        "subtitle": "Shopify Store Development",
+        "description": "Ongoing project focused on search engine optimization and strategic digital consulting."
+      },
+      "cs4": {
+        "title": "Xpel1",
+        "subtitle": "American shipping company",
+        "description": "Website development, including its SEO optimization and blog content."
+      },
+      "cs5": {
+        "title": "Good Life Group",
+        "subtitle": "Comprehensive Website Solutions",
+        "description": "Crafted the concept, designed, and developed an engaging and user-friendly website."
+      },
+      "cs6": {
+        "title": "Good Life Inspection",
+        "subtitle": "Website Optimization Services",
+        "description": "Executed SEO strategies and created high-quality content to enhance online presence."
+      },
+      "cs7": {
+        "title": "Angelina Lily",
+        "subtitle": "Shopify Store Development",
+        "description": "Created a unique design, transferred products from Etsy to Shopify, and set up a responsive online store."
+      },
+      "cs8": {
+        "title": "AllWoodenBiz",
+        "subtitle": "Shopify Store Development",
+        "description": "Developed a custom design, migrated products from Etsy to Shopify, and ensured a responsive store setup."
+      },
+      "cs9": {
+        "title": "BuzzCrafts",
+        "subtitle": "Shopify Store Development",
+        "description": "Designed a personalized store layout, moved products from Etsy to Shopify, and implemented responsive development."
+      }
+    }
+  },
+  
+  "BlockTestimonials": {
+    "heading": "What our customers say",
+    "text": "Agile Alpaca transformed our business, guiding us from local markets to international success. Their expertise in e-commerce and ongoing support have been invaluable.",
+    "testimonials": {
+      "testimonial1": {
+        "name": "Mark Dumnich",
+        "text": "We have been manufacturing watches for many years. Still, I didn’t understand how to go into ecommerce, and learned from Oleksandr. Now we are a well established brand, and collaborate with his TeamBlock on several Shopify projects."
+      },
+      "testimonial2": {
+        "name": "Igor Bilous",
+        "text": "I collaborate with Oleksandr on my digital projects. He is a well-known figure in international e-commerce, and is always available for all matters, from creating our website to optimizing it for search engines."
+      },
+      "testimonial3": {
+        "name": "Ivan Kozak",
+        "text": "We ran an arts studio in Lviv working on local markets. Oleksandr showed me the way to sell internationally and helped me on early stages in 2016-2017. Now that we sold our ServiceContainer more than 20,000 times, I have to thank him for all the expertise and loyal attitude to me all along the way."
+      }
+    }
+  },
+
+  "BlockTeam": {
+    "heading": {
+      "text": "**Our Team*/",
+      "subheading": ""
+    },
+    "members": {
+      "member1": {
+        "name": "Alex Radich",
+        "position": "Founder"
+      },
+      "member2": {
+        "name": "Oksana Kutsenko",
+        "position": "Project manager"
+      },
+      "member3": {
+        "name": "Yurii Fedotov",
+        "position": "Technical specialist"
+      },
+      "member4": {
+        "name": "Vladyslav Fokin",
+        "position": "Web developer"
+      }
+    }
+  },
+
+  "BlockGetStarted": {
+    "placeholder": "Your Email Address",
+    "button": "Get Started"
+  }
+}

@@ -1,6 +1,6 @@
-import './styles/option-selection-card.scss';
+import '@/components/_blocks/Services/ServicesCard/styles/service-card.scss';
 
-function OptionSelectionCard({text, title, imgUrl, subText, price, priceWithOutDiscount, priceLabel}: Readonly<OptionSelectionCardProps>) {
+function ServiceCard({text, title, imgUrl, subText, price, priceWithOutDiscount, priceLabel}: Readonly<OptionSelectionCardProps>) {
     return (
         <div className="option-selection-card">
             <div className='header-container'>
@@ -33,4 +33,4 @@ function OptionSelectionCard({text, title, imgUrl, subText, price, priceWithOutD
     );
 }
 
-export default OptionSelectionCard;
+export default ServiceCard;

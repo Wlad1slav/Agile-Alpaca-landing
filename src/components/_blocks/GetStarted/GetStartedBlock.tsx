@@ -7,8 +7,12 @@ import GSInputField from "@/components/_blocks/GetStarted/GSInputField";
 import GSButton from "@/components/_blocks/GetStarted/GSButton";
 
 import './styles/gs.block.scss';
+import {useTranslations} from "next-intl";
 
-function GetStartedBlock() {
+function GetStartedBlock({fieldPlaceholder, buttonText}: Readonly<{
+    fieldPlaceholder: string;
+    buttonText: string;
+}>) {
 
     const [activeField, setActiveField] = useState(false);
 
@@ -27,9 +31,10 @@ function GetStartedBlock() {
                 <GSInputField
                     onFocus={onFieldFocus}
                     onBlur={onFieldBlur}
+                    placeholder={fieldPlaceholder}
                 />
             </div>
-            <GSButton />
+            <GSButton text={buttonText} />
         </div>
     );
 }

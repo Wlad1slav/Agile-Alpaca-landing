@@ -1,9 +1,11 @@
 import './styles/gs-button.scss';
 
-function GSButton() {
+function GSButton({text}: Readonly<{
+    text: string;
+}>) {
     return (
         <button type='submit' className="get-start--button">
-            Get Started
+            {text}
         </button>
     );
 }

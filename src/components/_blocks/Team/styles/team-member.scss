@@ -12,10 +12,12 @@
   .info {
     position: absolute;
     bottom: 0;
-    padding: var(--tm-info-container-padding);
-    margin: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 
-    width: var(--tm-info-container-width);
+    padding: var(--tm-info-container-padding);
+    margin-block: 10px;
+    width: 100%;
 
     background: var(--tm-info-container-background-color);
     backdrop-filter: blur(var(--tm-info-container-background-blur));
@@ -23,6 +25,10 @@
     h3 { font-weight: var(--tm-info-container-heading-weight); }
 
     h3, p { color: var(--tm-info-container-heading-color); }
+
+    div {
+      position: relative;
+    }
   }
 
   img {

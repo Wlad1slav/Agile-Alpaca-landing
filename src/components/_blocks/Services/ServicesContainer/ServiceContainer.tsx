@@ -1,4 +1,4 @@
-import './styles/service-container.scss';
+import '@/components/_blocks/Services/ServicesContainer/styles/service-container.scss';
 
 function ServiceContainer({title, text, color}: Readonly<{title: string, text: string, color: 'dark' | 'light'}>) {
     return (

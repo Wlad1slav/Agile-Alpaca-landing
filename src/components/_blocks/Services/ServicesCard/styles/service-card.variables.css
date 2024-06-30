@@ -1,0 +1,58 @@
+:root {
+    --service-card-border-width: 2px;
+    --service-card-border-color: var(--clr-light-black);
+    --service-card-border-color__hover: grey;
+    --service-card-border-radius: 30px;
+
+    --service-card-transition-time: 0.3s;
+
+    --service-card-height: 500px;
+    --service-card-width: 30%;
+    --service-card-header-container-height: 380px;
+    --service-card-header-container-img-height: 170px;
+
+    --service-card-header-container-info-padding: 10px 15px;
+    --service-card-header-container-info-blur__hover: 2px;
+    --service-card-header-container-info-background__hover: rgba(0,0,0,0.5);
+    --service-card-header-container-info-text-color__hover: white;
+    --service-card-header-container-heading-font-size: 35px;
+    --service-card-header-container-heading-margin: 10px;
+    --service-card-header-container-subtext-font-size: calc(var(--font-size-base) - 4px);
+
+    --service-card-bottom-container-padding: 10px 15px;
+    --service-card-bottom-time-text-color: grey;
+    --service-card-bottom-price-font-size: 25px;
+
+    --service-card-bottom-button-background-color: white;
+    --service-card-bottom-button-text-color: var(--clr-black);
+    --service-card-bottom-button-background-color__hover: var(--clr-black);
+    --service-card-bottom-button-text-color__hover: white;
+
+    --service-card-bottom-button-padding: 10px 15px;
+    --service-card-bottom-button-border-radius: 100px;
+    --service-card-bottom-button-border-width: 2px;
+}
+
+body.dark-theme {
+    --service-card-border-color: grey;
+    --service-card-border-color__hover: var(--clr-light-black);
+
+    --service-card-bottom-button-background-color: var(--clr-black);
+    --service-card-bottom-button-text-color: white;
+    --service-card-bottom-button-background-color__hover: white;
+    --service-card-bottom-button-text-color__hover: var(--clr-black);
+}
+
+@media only screen and (max-width: 1344px) {
+    :root {
+        --service-card-width: 45%;
+    }
+}
+
+@media only screen and (max-width: 1004px) {
+    :root {
+        --service-card-width: 100%;
+    }
+}
+
+

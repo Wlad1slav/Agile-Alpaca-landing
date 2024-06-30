@@ -1,6 +1,6 @@
-import ServiceContainer from "@/components/_blocks/Services/ServiceContainer";
+import ServiceContainer from "@/components/_blocks/Services/ServicesContainer/ServiceContainer";
 
-import './styles/services-block.block.scss';
+import '@/components/_blocks/Services/ServicesContainer/styles/services-block.block.scss';
 
 function ServicesBlock({services}: Readonly<{
     services: Array<ServiceContainerProps>

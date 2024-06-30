@@ -3,20 +3,19 @@ import Testimonial from "@/components/_blocks/Testimonials/Testimonial";
 
 import './styles/testimonials.block.scss';
 
-function TestimonialsBlock({testimonials}: Readonly<{
+function TestimonialsBlock({testimonials, heading, text}: Readonly<{
     testimonials: Array<TestimonialProps>;
+    heading: string;
+    text: string;
 }>) {
     return (
         <div className="testimonials">
             <div className="side">
-                <h2>What our <br/>customers say</h2>
+                <h2>{heading}</h2>
 
                 <div className="quote">
                     <Icon.quote />
-                    <p>
-                        Agile Alpaca transformed our business, guiding us from local markets to international success.
-                        Their expertise in e-commerce and ongoing support have been invaluable.
-                    </p>
+                    <p>{text}</p>
                 </div>
 
                 <div className="stars">

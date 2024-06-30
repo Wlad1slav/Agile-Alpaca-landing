@@ -4,4 +4,6 @@ nav {
   display: flex;
   align-items: center;
   gap: var(--distance-between-navlinks);
+
+  * { width: auto; }
 }

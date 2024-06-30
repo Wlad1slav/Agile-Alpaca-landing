@@ -21,7 +21,10 @@
 
   max-width: var(--card-box-max-width);
 
-  h3 { font-size: var(--card-title-size); }
+  h3 {
+    font-size: var(--card-title-size);
+    text-align: center;
+  }
 
   p.subtitle { font-size: var(--card-subtitle-size); }
 

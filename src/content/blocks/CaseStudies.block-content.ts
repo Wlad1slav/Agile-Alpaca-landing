@@ -1,56 +1,58 @@
-const caseStudies: Array<CaseStudyProps> = [
+
+
+const caseStudies = (t: (key: string) => string): Array<CaseStudyProps> => [
     {
-        title: 'Impala Freight',
-        subtitle: 'Comprehensive Website Solutions',
-        text: 'Provided comprehensive design, engaging copywriting, and developed a fully functional website.',
+        title: t('caseStudies.cs1.title'),
+        subtitle: t('caseStudies.cs1.subtitle'),
+        text: t('caseStudies.cs1.description'),
         pageLink: 'https://impala-freight.com/',
         imageLink: '/images/pages/case-studies/impala-freight.webp'
     },{
-        title: 'Western Bid',
-        subtitle: 'International E-commerce Solutions',
-        text: 'Conceptualized and continuously supported multiple versions of their website since 2019.',
+        title: t('caseStudies.cs2.title'),
+        subtitle: t('caseStudies.cs2.subtitle'),
+        text: t('caseStudies.cs2.description'),
         pageLink: 'https://westernbid.com/',
         imageLink: 'https://cdn.prod.website-files.com/646a0068ffc7d3ef567e9d3d/647b9ac4017a9563bc27a5e1_nav_logo.svg'
     },{
-        title: 'Dumarko Vintage Watches',
-        subtitle: 'Shopify Store Development',
-        text: 'Ongoing project focused on search engine optimization and strategic digital consulting.',
+        title: t('caseStudies.cs3.title'),
+        subtitle: t('caseStudies.cs3.subtitle'),
+        text: t('caseStudies.cs3.description'),
         pageLink: 'https://dumarko.com/',
         imageLink: '/images/pages/case-studies/dumarko.webp'
     },{
-        title: 'Xpel1',
-        subtitle: 'American shipping company',
-        text: 'Website development, including its SEO optimization and blog content.',
+        title: t('caseStudies.cs4.title'),
+        subtitle: t('caseStudies.cs4.subtitle'),
+        text: t('caseStudies.cs4.description'),
         pageLink: 'https://xpel1.com/',
         imageLink: '/images/pages/case-studies/Xpel1-logo.webp'
     },{
-        title: 'Good Life Group',
-        subtitle: 'Comprehensive Website Solutions',
-        text: 'Crafted the concept, designed, and developed an engaging and user-friendly website.',
+        title: t('caseStudies.cs5.title'),
+        subtitle: t('caseStudies.cs5.subtitle'),
+        text: t('caseStudies.cs5.description'),
         pageLink: 'https://goodlifegrp.com/',
         imageLink: '/images/pages/case-studies/goodlife-group.webp'
     },{
-        title: 'Good Life Inspection',
-        subtitle: 'Website Optimization Services',
-        text: 'Executed SEO strategies and created high-quality content to enhance online presence.',
+        title: t('caseStudies.cs6.title'),
+        subtitle: t('caseStudies.cs6.subtitle'),
+        text: t('caseStudies.cs6.description'),
         pageLink: 'https://glinspections.com/',
         imageLink: '/images/pages/case-studies/goodlife-inspection.webp'
     },{
-        title: 'Angelina Lily',
-        subtitle: 'Shopify Store Development',
-        text: 'Created a unique design, transferred products from Etsy to Shopify, and set up a responsive online store.',
+        title: t('caseStudies.cs7.title'),
+        subtitle: t('caseStudies.cs7.subtitle'),
+        text: t('caseStudies.cs7.description'),
         pageLink: 'https://angelinalily.com/',
         imageLink: '/images/pages/case-studies/angelina-lily.webp'
     },{
-        title: 'AllWoodenBiz',
-        subtitle: 'Shopify Store Development',
-        text: 'Developed a custom design, migrated products from Etsy to Shopify, and ensured a responsive store setup.',
+        title: t('caseStudies.cs8.title'),
+        subtitle: t('caseStudies.cs8.subtitle'),
+        text: t('caseStudies.cs8.description'),
         pageLink: 'https://allwooden.biz/',
         imageLink: 'https://allwooden.biz/cdn/shop/files/isla_280x280.43090717_g7sg9g6k-removebg-preview.png?v=1716297082&width=135'
     },{
-        title: 'BuzzCrafts',
-        subtitle: 'Shopify Store Development',
-        text: 'Designed a personalized store layout, moved products from Etsy to Shopify, and implemented responsive development.',
+        title: t('caseStudies.cs9.title'),
+        subtitle: t('caseStudies.cs9.subtitle'),
+        text: t('caseStudies.cs9.description'),
         pageLink: 'https://buzzcrafts.art/',
         imageLink: 'https://buzzcrafts.art/cdn/shop/files/BazzCrafts_Baloo_Bhai_2_variants_2.svg?v=1715703879&width=135'
     },

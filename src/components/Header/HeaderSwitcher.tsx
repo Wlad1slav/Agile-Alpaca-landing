@@ -2,10 +2,10 @@
 
 import {useEffect, useCallback, useState} from "react";
 
-import HeaderStatic from "@/components/_navigation/HeaderStatic";
-import HeaderFixed from "@/components/_navigation/HeaderFixed";
-
-function Header() {
+function HeaderSwitcher({staticHeader, fixedHeader}: {
+    staticHeader: JSX.Element;
+    fixedHeader: JSX.Element;
+}) {
     const [showFixedHeader, setShowFixedHeader] = useState(false);
 
     const handleScroll = useCallback(() => {
@@ -21,10 +21,10 @@ function Header() {
 
     return (
         <>
-            <HeaderStatic />
-            { showFixedHeader && <HeaderFixed /> }
+            {staticHeader}
+            { showFixedHeader && fixedHeader }
         </>
     );
 }
 
-export default Header;
+export default HeaderSwitcher;
