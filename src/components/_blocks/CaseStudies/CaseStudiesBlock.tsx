@@ -17,6 +17,7 @@ function CaseStudiesBlock({caseStudies}: Readonly<{
                     else { translateY = '0%'; }
 
                     return <CaseStudy
+                        key={`${value}_${index}`}
                         translateY={translateY}
                         {...value}
                     />
