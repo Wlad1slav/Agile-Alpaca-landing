@@ -8,45 +8,45 @@ import CallToActionBlock from "@/components/_blocks/CTA/CallToActionBlock";
 import Icon from "@/components/_general/icon/Icon";
 import Row from "@/components/_general/positioning/Row";
 import React from "react";
-import {useTranslations} from "next-intl";
-import {unstable_setRequestLocale} from "next-intl/server";
 
-function HomePageRowServicesAndCTA() {
-    unstable_setRequestLocale('en');
-    const localisationServices = useTranslations('BlockServices');
-    const localisationCta = useTranslations('BlockCTA');
+function HomePageRowServicesAndCTA({localServices, localCta}: {
+    localServices: {[key: string]: any};
+    localCta: {[key: string]: any};
+}) {
 
     return (
         <Row id={'services'} margin={{bottom: "medium"}}>
             <Column margin={{bottom: "huge"}}>
-                <Heading.h2 subtext={localisationServices('heading.subheading')} marginBottom={'medium'}>
-                    {parse(stringFormat(localisationServices('heading.text')))}
+                <Heading.h2 subtext={localServices['heading']['subheading']} marginBottom={'medium'}>
+                    {parse(stringFormat(localServices['heading']['text']))}
                 </Heading.h2>
 
-                <ServicesBlock services={services(localisationServices)}/>
+                <ServicesBlock services={services(localServices['services'])}/>
             </Column>
 
             <Column isContentCentralized={true} style={{marginInline: "1%"}}>
                 <CallToActionBlock
-                    heading={localisationCta('heading')}
-                    text={localisationCta('text')}
+                    heading={localCta['heading']}
+                    text={localCta['text']}
                     buttonUrl='/'
-                    buttonText={localisationCta('button')}
+                    buttonText={localCta['button']}
                     ctaContainerLeft={{
                         rotate: 'left',
                         headIcon: <Icon.web/>,
-                        headHeading: localisationCta('leftContainer.heading'),
-                        subtext: localisationCta('leftContainer.subtext'),
-                        list: localisationCta('leftContainer.list').split('.'),
-                        buttonUrl: '/'
+                        headHeading: localCta['leftContainer']['heading'],
+                        subtext: localCta['leftContainer']['subtext'],
+                        list: localCta['leftContainer']['list'].split('.'),
+                        buttonUrl: '/',
+                        cta: localCta['containersButton']
                     }}
                     ctaContainerRight={{
                         rotate: 'right',
                         headIcon: <Icon.shopify/>,
-                        headHeading: localisationCta('rightContainer.heading'),
-                        subtext: localisationCta('rightContainer.subtext'),
-                        list: localisationCta('rightContainer.list').split('.'),
-                        buttonUrl: '/'
+                        headHeading: localCta['rightContainer']['heading'],
+                        subtext: localCta['rightContainer']['subtext'],
+                        list: localCta['rightContainer']['list'].split('.'),
+                        buttonUrl: '/',
+                        cta: localCta['containersButton']
                     }}
                 />
             </Column>

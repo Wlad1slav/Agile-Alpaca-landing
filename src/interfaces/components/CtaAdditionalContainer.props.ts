@@ -5,4 +5,5 @@ interface CtaAdditionalContainerProps {
     subtext: string;
     list: string[];
     buttonUrl: string;
+    cta: string;
 }

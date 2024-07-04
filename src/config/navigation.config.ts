@@ -1,18 +1,18 @@
-const navigationLinks = (t: (key: string) => string): Array<NavLinkProps> => [
+const navigationLinks = (local: { [key: string]: any }): Array<NavLinkProps> => [
     {
-        text: t('navigation.link1'),
+        text: local['link1'],
         href: 'services'
     },
     {
-        text: t('navigation.link2'),
+        text: local['link2'],
         href: 'caseStudies'
     },
     {
-        text: t('navigation.link3'),
+        text: local['link3'],
         href: 'testimonials'
     },
     {
-        text: t('navigation.link4'),
+        text: local['link4'],
         href: 'ourTeam'
     },
 ];

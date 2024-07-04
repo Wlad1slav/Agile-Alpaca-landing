@@ -1,30 +1,30 @@
-export const services = (t: (key: string) => string): Array<ServiceContainerProps> => [
+export const services = (local: { [key: string]: any }): Array<ServiceContainerProps> => [
     {
-        name: t('services.service1.name'),
-        description: t('services.service1.description')
+        name: local['service1']['name'],
+        description: local['service1']['description']
     },{
-        name: t('services.service2.name'),
-        description: t('services.service2.description')
+        name: local['service2']['name'],
+        description: local['service2']['description']
     },{
-        name: t('services.service3.name'),
-        description: t('services.service3.description')
+        name: local['service3']['name'],
+        description: local['service3']['description']
     },{
-        name: t('services.service4.name'),
-        description: t('services.service4.description')
+        name: local['service4']['name'],
+        description: local['service4']['description']
     },{
-        name: t('services.service5.name'),
-        description: t('services.service5.description')
+        name: local['service5']['name'],
+        description: local['service5']['description']
     },{
-        name: t('services.service6.name'),
-        description: t('services.service6.description')
+        name: local['service6']['name'],
+        description: local['service6']['description']
     },{
-        name: t('services.service7.name'),
-        description: t('services.service7.description')
+        name: local['service7']['name'],
+        description: local['service7']['description']
     },{
-        name: t('services.service8.name'),
-        description: t('services.service8.description')
+        name: local['service8']['name'],
+        description: local['service8']['description']
     },{
-        name: t('services.service9.name'),
-        description: t('services.service9.description')
+        name: local['service9']['name'],
+        description: local['service9']['description']
     },
 ];

@@ -1,13 +1,13 @@
 import {global} from "./site.config";
 
-const footerConfig = (t: (key: string) => string): {
+const footerConfig = (local: { [key: string]: any }): {
     head: Array<FooterHeadBlockProps>;
     foot: { copyright: string; info: string; };
 } => {
     return {
         head: [
             {
-                heading: t('blocks.block1'),
+                heading: local['blocks']['block1'],
                 links: [
                     {text: global.contacts.email ?? '', url: `mailto:${global.contacts.email}`},
                     {text: global.contacts.mobile ?? '', url: `tel:${global.contacts.mobile}`},
@@ -19,15 +19,15 @@ const footerConfig = (t: (key: string) => string): {
                 }
             },
             {
-                heading: t('blocks.block2'),
+                heading: local['blocks']['block2'],
                 links: [
-                    {text: t('services.service1'), url: '/'},
-                    {text: t('services.service2'), url: '/'},
-                    {text: t('services.service3'), url: '/'},
-                    {text: t('services.service4'), url: '/'},
-                    {text: t('services.service5'), url: '/'},
-                    {text: t('services.service6'), url: '/'},
-                    {text: t('services.service7'), url: '/'},
+                    {text: local['services']['service1'], url: '/'},
+                    {text: local['services']['service2'], url: '/'},
+                    {text: local['services']['service3'], url: '/'},
+                    {text: local['services']['service4'], url: '/'},
+                    {text: local['services']['service5'], url: '/'},
+                    {text: local['services']['service6'], url: '/'},
+                    {text: local['services']['service7'], url: '/'},
                 ],
                 styles: {
                     borderBottom: "2px solid rgb(60,60,60)",
@@ -37,7 +37,7 @@ const footerConfig = (t: (key: string) => string): {
                 }
             },
             {
-                heading: t('blocks.block3'),
+                heading: local['blocks']['block3'],
                 links: [
                     {text: 'LinkendIn', url: '/'},
                     {text: 'GitHub', url: '/'},
@@ -51,7 +51,7 @@ const footerConfig = (t: (key: string) => string): {
         ],
         foot: {
             copyright: `© 2024 by ${global.siteName}`,
-            info: t('description')
+            info: local['description']
         }
     }
 }

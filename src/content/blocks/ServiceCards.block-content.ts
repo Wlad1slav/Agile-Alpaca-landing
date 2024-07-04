@@ -1,51 +1,57 @@
-export const serviceCardsBlockContent = (t: (key: string) => string): Array<OptionSelectionCardProps> => [
+export const serviceCardsBlockContent = (local: { [key: string]: any }): Array<OptionSelectionCardProps> => [
     {
-        title: t('services.service1.title'),
-        subText: t('services.service1.subtext'),
-        text: t('services.service1.text'),
+        title: local['service1']['title'],
+        subText: local['service1']['subtext'],
+        text: local['service1']['text'],
         imgUrl: '/images/pages/services/0_tQQ7SLPOJfxaG4ZY.webp',
         price: 24,
         priceWithOutDiscount: 29,
-        priceLabel: 'Per Hour'
+        priceLabel: local['service1']['priceLabel'],
+        ctaButton: local['ctaButton']
     },{
-        title: t('services.service2.title'),
-        subText: t('services.service2.subtext'),
-        text: t('services.service2.text'),
+        title: local['service2']['title'],
+        subText: local['service2']['subtext'],
+        text: local['service2']['text'],
         imgUrl: '/images/pages/services/Копия strategy-791200.webp',
         price: 499,
         priceWithOutDiscount: 699,
-        priceLabel: 'Per Project'
+        priceLabel: local['service2']['priceLabel'],
+        ctaButton: local['ctaButton']
     },{
-        title: t('services.service3.title'),
-        subText: t('services.service3.subtext'),
-        text: t('services.service3.text'),
+        title: local['service3']['title'],
+        subText: local['service3']['subtext'],
+        text: local['service3']['text'],
         imgUrl: '/images/pages/services/Копия pexels-metadizayn-1058100.webp',
         price: 249,
         priceWithOutDiscount: 349,
-        priceLabel: 'Monthly'
+        priceLabel: local['service3']['priceLabel'],
+        ctaButton: local['ctaButton']
     },{
-        title: t('services.service4.title'),
-        subText: t('services.service4.subtext'),
-        text: t('services.service4.text'),
+        title: local['service4']['title'],
+        subText: local['service4']['subtext'],
+        text: local['service4']['text'],
         imgUrl: '/images/pages/services/customer-relationship-management-concept-2.webp',
         price: 199,
         priceWithOutDiscount: 249,
-        priceLabel: 'Per Integration'
+        priceLabel: local['service4']['priceLabel'],
+        ctaButton: local['ctaButton']
     },{
-        title: t('services.service5.title'),
-        subText: t('services.service5.subtext'),
-        text: t('services.service5.text'),
+        title: local['service5']['title'],
+        subText: local['service5']['subtext'],
+        text: local['service5']['text'],
         imgUrl: '/images/pages/services/marketing-strategy.webp',
         price: 1299,
         priceWithOutDiscount: 1599,
-        priceLabel: 'Per Project'
+        priceLabel: local['service5']['priceLabel'],
+        ctaButton: local['ctaButton']
     },{
-        title: t('services.service6.title'),
-        subText: t('services.service6.subtext'),
-        text: t('services.service6.text'),
+        title: local['service6']['title'],
+        subText: local['service6']['subtext'],
+        text: local['service6']['text'],
         imgUrl: '/images/pages/services/pexels-markusspiske-3806747.webp',
         price: 599,
         priceWithOutDiscount: 799,
-        priceLabel: 'Monthly'
+        priceLabel: local['service6']['priceLabel'],
+        ctaButton: local['ctaButton']
     },
 ];

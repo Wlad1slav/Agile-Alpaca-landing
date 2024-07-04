@@ -6,4 +6,5 @@ interface OptionSelectionCardProps {
     price: number;
     priceWithOutDiscount: number;
     priceLabel: string;
+    ctaButton: string;
 }

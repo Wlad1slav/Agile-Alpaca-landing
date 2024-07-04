@@ -1,16 +1,13 @@
-import {useTranslations} from "next-intl";
-
 import FooterHeadBlock from "@/components/Footer/FooterHeadBlock";
 
 import footerConfig from "@/config/footer.config";
 
 import './style/footer.scss';
-import {unstable_setRequestLocale} from "next-intl/server";
 
-function Footer() {
-    unstable_setRequestLocale('en');
-    const localisationFooter = useTranslations('Footer');
-    const footer = footerConfig(localisationFooter);
+function Footer({localFooter}: {
+    localFooter: { [key: string]: any };
+}) {
+    const footer = footerConfig(localFooter);
 
     return (
         <footer>

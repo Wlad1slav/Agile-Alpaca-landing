@@ -5,15 +5,12 @@ import ServiceCards from "@/components/_blocks/Services/ServicesCard/ServiceCard
 import {serviceCardsBlockContent} from "@/content/blocks/ServiceCards.block-content";
 import Row from "@/components/_general/positioning/Row";
 import React from "react";
-import {useTranslations} from "next-intl";
 import parse from "html-react-parser";
 import stringFormat from "@/utils/stringFormat";
-import {unstable_setRequestLocale} from "next-intl/server";
 
-function HomePageRowServicesCard() {
-    unstable_setRequestLocale('en');
-    const localisationServiceCards = useTranslations('BlockServiceCards');
-
+function HomePageRowServicesCard({localServicesCard}: {
+    localServicesCard: {[key: string]: any}
+}) {
     return (
         <Row
             isContrast={true}
@@ -26,13 +23,13 @@ function HomePageRowServicesCard() {
             <Column margin={{bottom: null}} mobilePaddingMustHave={true}>
                 <Heading.h2
                     marginBottom={'medium'}
-                    subtext={localisationServiceCards('heading.subheading')}
+                    subtext={localServicesCard['heading']['subheading']}
                     id={'getStarted'}
                 >
-                    {parse(stringFormat(localisationServiceCards('heading.text')))}
+                    {parse(stringFormat(localServicesCard['heading']['text']))}
                 </Heading.h2>
 
-                <ServiceCards cards={serviceCardsBlockContent(localisationServiceCards)}/>
+                <ServiceCards cards={serviceCardsBlockContent(localServicesCard['services'])}/>
             </Column>
         </Row>
     );

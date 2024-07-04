@@ -1,0 +1,32 @@
+{
+  "Header": {
+    "navigation": {
+      "link1": "Services",
+      "link2": "Case Studies",
+      "link3": "Testimonials",
+      "link4": "Team"
+    },
+    "cta": {
+      "default": "Get Started",
+      "contact": "Contact Us"
+    }
+  },
+
+  "Footer": {
+    "blocks": {
+      "block1": "Contacts",
+      "block2": "Our services",
+      "block3": "We are on social networks"
+    },
+    "services": {
+      "service1": "Web development",
+      "service2": "Account-Based Marketing",
+      "service3":  "Creating a Shopify store",
+      "service4": "Inbound Marketing",
+      "service5":  "CRM Integration",
+      "service6": "Marketing Strategy",
+      "service7":  "Advertising"
+    },
+    "description": "Agile Alpaca is a marketing agency focused on building trust and gaining devoted customers through personalized web development, CRM integration, inbound marketing, and e-commerce solutions. Let's craft a winning marketing and sales journey together!"
+  }
+}

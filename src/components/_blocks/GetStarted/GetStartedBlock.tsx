@@ -7,7 +7,6 @@ import GSInputField from "@/components/_blocks/GetStarted/GSInputField";
 import GSButton from "@/components/_blocks/GetStarted/GSButton";
 
 import './styles/gs.block.scss';
-import {useTranslations} from "next-intl";
 
 function GetStartedBlock({fieldPlaceholder, buttonText}: Readonly<{
     fieldPlaceholder: string;

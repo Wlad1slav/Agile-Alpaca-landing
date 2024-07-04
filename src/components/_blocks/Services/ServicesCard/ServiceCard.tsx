@@ -1,6 +1,6 @@
 import '@/components/_blocks/Services/ServicesCard/styles/service-card.scss';
 
-function ServiceCard({text, title, imgUrl, subText, price, priceWithOutDiscount, priceLabel}: Readonly<OptionSelectionCardProps>) {
+function ServiceCard({text, title, imgUrl, subText, price, priceWithOutDiscount, priceLabel, ctaButton}: Readonly<OptionSelectionCardProps>) {
     return (
         <div className="option-selection-card">
             <div className='header-container'>
@@ -27,7 +27,7 @@ function ServiceCard({text, title, imgUrl, subText, price, priceWithOutDiscount,
                     </p>
                 </div>
 
-                <button>Learn more →</button>
+                <button>{ctaButton}</button>
             </div>
         </div>
     );

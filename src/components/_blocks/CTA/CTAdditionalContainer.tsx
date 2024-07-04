@@ -2,7 +2,7 @@ import Button from "@/components/_general/button/Button";
 
 import './styles/cta-additional-container.scss';
 
-function CTAdditionalContainer({rotate, buttonUrl, list, subtext, headIcon, headHeading}: Readonly<CtaAdditionalContainerProps>) {
+function CTAdditionalContainer({rotate, buttonUrl, list, subtext, headIcon, headHeading, cta}: Readonly<CtaAdditionalContainerProps>) {
     const classes = [
         'cta--additional-container',
         rotate
@@ -23,7 +23,7 @@ function CTAdditionalContainer({rotate, buttonUrl, list, subtext, headIcon, head
                 }
             </ul>
             
-            <Button url={buttonUrl} text={'Learn more'} buttonStyle={'filling'} />
+            <Button url={buttonUrl} text={cta} buttonStyle={'filling'} />
         </div>
     );
 }
