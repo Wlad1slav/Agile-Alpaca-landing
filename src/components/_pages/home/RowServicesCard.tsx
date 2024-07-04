@@ -15,7 +15,7 @@ function HomePageRowServicesCard({localServicesCard}: {
         <Row
             isContrast={true}
             separators={{
-                top: <Separator.WaveTop/>,
+                top: <Separator.WaveTop className='separator'/>,
                 bottom: <Separator.WaveBottom/>,
             }}
             margin={{bottom: 'tiny'}}

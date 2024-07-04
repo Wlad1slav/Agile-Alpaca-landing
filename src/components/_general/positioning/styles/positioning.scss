@@ -30,4 +30,9 @@ section.row {
       fill: var(--contrast-svg-filling);
     }
   }
+
+  &.has-separators {
+    // Gag that corrects the visual bug of the upper separator
+    svg.separator { margin-bottom: -1px; }
+  }
 }

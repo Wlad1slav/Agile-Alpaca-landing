@@ -14,7 +14,7 @@ const createSeparator = (path: JSX.Element) => (
     {fill = 'fill--standard'}: SeparatorProps = {}
 ) => {
     return (
-        <svg className={fill} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg className={`${fill} separator`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             {path}
         </svg>
     );

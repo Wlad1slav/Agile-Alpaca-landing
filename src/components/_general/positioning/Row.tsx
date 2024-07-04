@@ -17,7 +17,8 @@ function Row({children, isContrast, separators, style, margin = {bottom: 'huge'}
     const classes = [
         'row',
         generationOfMarginCssClasses(margin),
-        isContrast ? 'contrast--row' : ''
+        isContrast ? 'contrast--row' : '',
+        separators ? 'has-separators' : ''
     ];
 
     return (
