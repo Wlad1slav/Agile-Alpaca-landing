@@ -32,6 +32,8 @@
     --heading2-size: 30px;
     --heading2-font-weight: 400;
     --heading3-size: 20px;
+
+    --scroll-padding-top: 100px;
 }
 
 body.dark-theme {
@@ -46,5 +48,7 @@ body.dark-theme {
         --heading1-size: 40px;
         --heading2-size: 20px;
         --heading3-size: 18px;
+
+        --scroll-padding-top: 50px;
     }
 }
