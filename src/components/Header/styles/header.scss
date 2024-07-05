@@ -27,6 +27,7 @@ header {
 
     div.buttons--block {
       display: flex;
+      align-items: flex-end;
       gap: var(--distance-between-navlinks);
     }
 
