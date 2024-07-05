@@ -12,6 +12,21 @@ export const global: {
     internationalisation: {
         defaultLanguage: 'en',
         languages: ['en', 'ua', 'crt'],
+        languagesSelect: [
+            {
+                name: "English",
+                langUrl: "en",
+                imgUrl: "/images/languages/en.webp"
+            },{
+                name: "Українська",
+                langUrl: "ua",
+                imgUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ64v0is3JxtjICBvBDShoiKZMspgwwaIgYg&s"
+            },{
+                name: "Къырымтатар",
+                langUrl: "crt",
+                imgUrl: "/images/languages/crt.webp"
+            },
+        ],
         localisationPath: `${process.env.NEXT_APP_DOMAIN}/localisation`
     }
 }

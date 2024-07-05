@@ -1,0 +1,68 @@
+@import "select.variables.css";
+
+.select {
+  position: relative;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &, ul {
+    width: var(--select-width);
+  }
+
+  p.field {
+    border-radius: var(--select-border-radius);
+    box-shadow: 0 5px 10px var(--select-border-color);
+    padding: var(--select-padding);
+  }
+
+  &:hover {
+    p.field {
+      border-bottom-right-radius: unset;
+      border-bottom-left-radius: unset;
+      box-shadow: 0 0 10px var(--select-border-color);
+    }
+  }
+
+  ul, p.field {
+    background-color: var(--select-background);
+  }
+
+  li a, p.field {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+
+    font-weight: unset;
+
+    img {
+      width: var(--select-imgs-width);
+      height: var(--select-imgs-width);
+      border: 1px solid var(--select-border-color);
+      border-radius: var(--select-imgs-border-radius);
+    }
+
+    &:hover {
+      background-color: var(--select-background--hover);
+    }
+  }
+
+  ul {
+    position: absolute;
+    z-index: 1;
+    border: 1px solid var(--select-border-color);
+    padding: var(--select-padding);
+    list-style: none;
+
+    border-bottom-right-radius: var(--select-border-radius);
+    border-bottom-left-radius: var(--select-border-radius);
+
+    a {
+      padding: var(--select-padding);
+      border-radius: 2px;
+    }
+  }
+}

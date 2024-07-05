@@ -1,0 +1,16 @@
+:root {
+    --select-width: 170px;
+    --select-border-radius: 5px;
+    --select-border-color: var(--clr-shadow-light);
+    --select-padding: 5px;
+    --select-background: white;
+    --select-background--hover: var(--clr-darken-white);
+    --select-imgs-width: 30px;
+    --select-imgs-border-radius: 100%;
+}
+
+body.dark-theme {
+    --select-border-color: rgba(0,0,0,0.2);
+    --select-background: var(--clr-black);
+    --select-background--hover: var(--clr-light-black);
+}

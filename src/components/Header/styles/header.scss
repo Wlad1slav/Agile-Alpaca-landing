@@ -24,5 +24,14 @@ header {
     display: flex;
     align-items: center;
     gap: var(--distance-between-navlinks);
+
+    div.buttons--block {
+      display: flex;
+      gap: var(--distance-between-navlinks);
+    }
+
+    @media only screen and (max-width: 550px) {
+      flex-direction: column;
+    }
   }
 }
