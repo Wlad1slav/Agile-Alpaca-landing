@@ -1,0 +1,11 @@
+#not-found {
+  min-height: 50vh;
+  position: relative;
+
+  div {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+  }
+}

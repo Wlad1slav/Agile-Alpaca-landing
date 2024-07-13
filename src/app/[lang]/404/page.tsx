@@ -1,11 +1,14 @@
-import Link from 'next/link'
+import Logo from "@/components/_general/Logo";
+import './404.scss';
 
 export default function ErrorPage() {
     return (
-        <div>
-            <h2>Not Found</h2>
-            <p>Could not find requested resource</p>
-            <Link href="/">Return Home</Link>
+        <div id="not-found">
+            <div>
+                <Logo />
+                <h1>Not Found</h1>
+                <p>Could not find requested resource</p>
+            </div>
         </div>
     )
 }
