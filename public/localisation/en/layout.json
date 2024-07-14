@@ -1,11 +1,5 @@
 {
   "Header": {
-    "navigation": {
-      "link1": "Services",
-      "link2": "Case Studies",
-      "link3": "Testimonials",
-      "link4": "Team"
-    },
     "cta": {
       "default": "Get Started",
       "contact": "Contact Us"

@@ -1,16 +1,21 @@
-import HeaderSwitcher from "@/components/Header/HeaderSwitcher";
-import navigationLinks from "@/config/navigation.config";
 import HeaderStatic from "@/components/Header/HeaderStatic";
-import HeaderFixed from "@/components/Header/HeaderFixed";
 import NavButton from "@/components/Header/NavButton";
 
-function Header({localHeader, localNavigation}: {
+/**
+ * Header component that renders the header of the website.
+ *
+ * @param {Object} props - The props object containing the localized header data.
+ * @param {Object} props.localHeader - The localized header data.
+ * @param {Object} props.localHeader.cta - The localized header CTAs.
+ * @param {string} props.localHeader.cta.default - The localized default get started button text.
+ * @param {string} props.localHeader.cta.contact - The localized contact button text.
+ * @return {JSX.Element} The rendered header component.
+ */
+function Header({localHeader}: {
     localHeader: { [key: string]: any };
-    localNavigation: { [key: string]: any };
 }) {
 
-    const navigation = navigationLinks(localNavigation);
-
+    // Create the get started button element.
     const getStartedButtonElement: JSX.Element = <NavButton
         key='btn-h-gs'
         href='#getStarted'
@@ -18,6 +23,7 @@ function Header({localHeader, localNavigation}: {
         text={localHeader['cta']['default']}
     />;
 
+    // Create the contact button element.
     const contactButtonElement: JSX.Element = <NavButton
         key='btn-h-contact'
         href='#'
@@ -25,27 +31,9 @@ function Header({localHeader, localNavigation}: {
         text={localHeader['cta']['contact']}
     />;
 
+    // Render the header component with the created buttons.
     return (
-        <>
-            <HeaderSwitcher
-                staticHeader={<HeaderStatic
-                    navigation={navigation}
-                    buttons={[contactButtonElement, getStartedButtonElement]}
-                />}
-
-                fixedHeader={<HeaderFixed
-                    navigation={navigation}
-                    buttons={[
-                        <NavButton
-                            key='btn-h-gs'
-                            href='#getStarted'
-                            fill={'not-noticeable'}
-                            text={localHeader['cta']['default']}
-                        />
-                    ]}
-                />}
-            />
-        </>
+        <HeaderStatic buttons={[contactButtonElement, getStartedButtonElement]} />
     );
 }
 

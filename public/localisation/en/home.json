@@ -1,4 +1,10 @@
 {
+  "Navigation": {
+      "link1": "Services",
+      "link2": "Case Studies",
+      "link3": "Testimonials",
+      "link4": "Team"
+    },
   "HomePageHead": {
     "heading": "Build Trust, Gain Devoted Customers",
     "text": "Build Your Audience & Get Devoted Customers with Agile Alpaca, Marketing Agency Targeted at Human Relationships",

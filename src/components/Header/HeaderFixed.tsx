@@ -11,7 +11,7 @@ function HeaderFixed({navigation, buttons}: HeaderProps) {
             <Logo withName={false} />
             <NavBar>
                 {
-                    navigation.map((value) => {
+                    navigation?.map((value) => {
                         return <NavLink key={value.href} {...value} />
                     })
                 }
