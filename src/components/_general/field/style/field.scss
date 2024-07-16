@@ -1,0 +1,22 @@
+.field {
+    position: relative;
+    width: 100%;
+
+    .additional-text {
+        position: absolute;
+        bottom: -17px;
+        left: 20px;
+
+        * {
+            font-size: 12px;
+        }
+
+        .field--error {
+            color: var(--clr-red);
+        }
+
+        .field--help {
+            color: var(--clr-grey);
+        }
+    }
+}
