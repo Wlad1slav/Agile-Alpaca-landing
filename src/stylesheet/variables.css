@@ -3,10 +3,14 @@
 :root {
     /* Colors */
     --clr-black: rgb(30, 30, 30);
+    --clr-black-transporent: rgba(30, 30, 30, 0.2);
     --clr-light-black: rgb(60, 60, 60);
     --clr-darken-white: rgb(240, 240, 240);
     --clr-shadow-light: rgba(200, 200, 200, 0.5);
+    --clr-grey: #929191;
+    --clr-light-grey: rgb(200, 200, 200);
     --clr-shadow-dark: rgb(40, 40, 40);
+    --clr-red: rgb(225, 50, 50);
 
     /* Indents */
     --indent-tiny: 4px;
