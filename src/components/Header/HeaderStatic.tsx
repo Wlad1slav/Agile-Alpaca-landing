@@ -2,7 +2,7 @@ import React from "react";
 
 import Logo from "@/components/_general/Logo";
 import ThemeToggle from "@/components/_general/theme-toggle/ThemeToggle";
-import Select from "@/components/_general/select/Select";
+import LanguageSelect from "../LanguageSelect/LanguageSelect";
 
 import './styles/header.scss';
 import {global} from "@/config/site.config";
@@ -28,7 +28,7 @@ function HeaderStatic({buttons}: HeaderProps): JSX.Element {
                     }
                 </div>
                 <div className="buttons--block">
-                    <Select languages={global.internationalisation.languagesSelect} />
+                    <LanguageSelect languages={global.internationalisation.languagesSelect} />
                     <ThemeToggle />
                 </div>
             </div>

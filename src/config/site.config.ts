@@ -15,15 +15,15 @@ export const global: {
         languagesSelect: [
             {
                 name: "English",
-                langUrl: "en",
+                url: "en",
                 imgUrl: "/images/languages/en.webp"
             },{
                 name: "Українська",
-                langUrl: "ua",
+                url: "ua",
                 imgUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ64v0is3JxtjICBvBDShoiKZMspgwwaIgYg&s"
             },{
                 name: "Къырымтатар",
-                langUrl: "crt",
+                url: "crt",
                 imgUrl: "/images/languages/crt.webp"
             },
         ],

@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-function SelectOption({imgUrl, langUrl, name}: SelectOptionProps) {
+function LanguageOption({imgUrl, url, name}: LanguageOptionProps) {
     return (
         <li>
-            <Link href={`/${langUrl}`}>
+            <Link href={`/${url}`}>
                 <img src={imgUrl} alt={name}/>
                 <p>{name}</p>
             </Link>
@@ -11,4 +11,4 @@ function SelectOption({imgUrl, langUrl, name}: SelectOptionProps) {
     )
 }
 
-export default SelectOption;
+export default LanguageOption;

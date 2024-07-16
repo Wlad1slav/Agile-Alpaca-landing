@@ -1,5 +1,4 @@
-interface SelectOptionProps {
-    imgUrl: string;
-    name: string;
-    langUrl: Language;
+interface SelectOption {
+    text: string;
+    value: string;
 }

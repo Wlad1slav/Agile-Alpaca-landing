@@ -1,38 +1,13 @@
-'use client'
+import './styles/select.scss';
 
-import {useState} from "react";
-import {useParams} from "next/navigation";
-
-import SelectOption from "@/components/_general/select/SelectOption";
-
-import './style/select.scss';
-
-
-function Select({languages}: {
-    languages: Array<SelectOptionProps>;
-}) {
-    const [isActive, setIsActive] = useState(false);
-
-    /* Current language */
-    const params = useParams();
-    const currentLanguage = params['lang'];
-
-    const currentLanguageElement = languages.filter(value => value.langUrl === currentLanguage);
+function Select({options, name, placeholder, value, onChange, label, ...props}: SelectProps) {
 
     return (
-        <div className="select" onMouseEnter={() => setIsActive(true)} onMouseLeave={() => setIsActive(false)}>
-            <p className="field">
-                <img src={currentLanguageElement[0].imgUrl} alt={currentLanguageElement[0].name}/>
-                {currentLanguageElement[0].name}
-            </p>
-
-            { isActive &&
-                <ul>
-                    {
-                        languages.map((language) => <SelectOption imgUrl={language.imgUrl} name={language.name} langUrl={language.langUrl} />)
-                    }
-                </ul>
-            }
+        <div className="select" {...props}>
+            <label>{label}</label>
+            <select name={name} value={value} onChange={onChange}>
+                {options.map((option) => <option key={option.value} value={option.value}>{option.text}</option>)}
+            </select>
         </div>
     );
 }
