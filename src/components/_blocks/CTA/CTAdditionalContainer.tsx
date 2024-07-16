@@ -1,4 +1,4 @@
-import Button from "@/components/_general/button/Button";
+import ButtonLink from "@/components/_general/button/ButtonLink";
 
 import './styles/cta-additional-container.scss';
 
@@ -23,7 +23,7 @@ function CTAdditionalContainer({rotate, buttonUrl, list, subtext, headIcon, head
                 }
             </ul>
             
-            <Button url={buttonUrl} text={cta} buttonStyle={'filling'} />
+            <ButtonLink url={buttonUrl} text={cta} buttonStyle={'filling'} />
         </div>
     );
 }

@@ -1,5 +1,5 @@
-interface ButtonProps {
-    type?: 'submit' | 'reset' | 'button';
+interface ButtonLinkProps {
+    url: string;
     text: string;
     margin?: MarginCssClasses;
     buttonStyle: 'outline' | 'filling';

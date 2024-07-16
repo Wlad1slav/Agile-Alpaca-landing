@@ -1,4 +1,4 @@
-import Button from "@/components/_general/button/Button";
+import ButtonLink from "@/components/_general/button/ButtonLink";
 import CTAdditionalContainer from "@/components/_blocks/CTA/CTAdditionalContainer";
 
 import './styles/cta.block.scss';
@@ -19,7 +19,7 @@ function CallToActionBlock({heading, text, buttonUrl, buttonText, ctaContainerLe
                 <h2>{heading}</h2>
                 <p>{text}</p>
 
-                <Button url={buttonUrl} text={buttonText} buttonStyle={'filling'} size={'long'} icon={'→'} />
+                <ButtonLink url={buttonUrl} text={buttonText} buttonStyle={'filling'} size={'long'} icon={'→'} />
             </div>
 
             <CTAdditionalContainer {...ctaContainerRight} />
