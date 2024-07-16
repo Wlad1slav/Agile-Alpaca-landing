@@ -1,0 +1,1 @@
+type InputTypes = 'text' | 'email' | 'password' | 'number' | 'tel';
