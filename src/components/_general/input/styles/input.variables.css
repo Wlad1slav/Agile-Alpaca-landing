@@ -1,5 +1,4 @@
 :root {
-   --input-padding: 15px;
    --input-color: var(--clr-grey);
    --input-active-label-size: 12px;
 }

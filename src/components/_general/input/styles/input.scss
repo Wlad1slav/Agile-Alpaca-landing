@@ -18,12 +18,9 @@
     input {
         width: 100%;
         padding: var(--input-padding);
-        border-radius: 100px;
-        border: 2px solid var(--clr-black);
-
-        &:focus {
-            outline: none;
-        }
+        border-radius: var(--input-border-radius);
+        border: var(--input-border);
+        outline: none;
     }
 
     &.active {
