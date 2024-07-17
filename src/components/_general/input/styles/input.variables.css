@@ -1,4 +1,10 @@
 :root {
    --input-color: var(--clr-grey);
+   --input-color-active: var(--clr-black);
    --input-active-label-size: 12px;
+}
+
+body.dark-theme {
+   /* --input-color: var(--clr-white); */
+   --input-color-active: var(--clr-white);
 }
