@@ -1,6 +1,6 @@
 interface InternationalisationInterface {
     defaultLanguage: string;
     languages: string[];
-    languagesSelect: Array<SelectOptionProps>;
+    languagesSelect: Array<LanguageOptionProps>;
     localisationPath: string;
 }
