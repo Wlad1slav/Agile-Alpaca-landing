@@ -18,7 +18,7 @@ function Header({localHeader}: {
     // Create the get started button element.
     const getStartedButtonElement: JSX.Element = <NavButton
         key='btn-h-gs'
-        href='#getStarted'
+        href='/get-started'
         fill={'outline'}
         text={localHeader['cta']['default']}
     />;
