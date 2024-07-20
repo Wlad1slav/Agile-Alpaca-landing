@@ -1,31 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import { Metadata } from "next";
 import Image from "next/image";
-import fetchLocalisation from "@/utils/fetchLocalisation";
+import {baseUrl} from "@/config/metaData.config";
 import GetStartedForm from "@/components/GetStartedForm/GetStartedForm";
 import './page.scss';
 
-// export async function generateMetadata({ params: {lang} }: {
-//     params: { lang: string; }
-// }): Promise<Metadata> {
-//     // Fetch the localisation for the metadata
-//     const local = await fetchLocalisation(lang, 'metadata');
+export async function generateMetadata(): Promise<Metadata> {
 
-//     // Create the metadata configuration
-//     const meta = metaDataConfig(local.data);
+    const title = 'Get started';
 
-//     // Return the metadata
-//     return {
-//         metadataBase: new URL(baseUrl),
-//         title: meta.homepage.title,
-//         description: meta.homepage.metaDescription,
-//         openGraph: {
-//             title: meta.homepage.title,
-//             description: meta.homepage.metaDescription,
-//             images: meta.homepage.pageImageUrl,
-//         },
-//     };
-// }
+    const meta = 'Get started with Alpaca Agile Agency to build trust and gain devoted customers!';
+
+    return {
+        metadataBase: new URL(baseUrl),
+        title: title,
+        description: meta,
+        openGraph: {
+            title: title,
+            description: meta
+        },
+    };
+}
 
 export default async function GetStarted() {
 
