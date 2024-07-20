@@ -3,4 +3,5 @@ interface TeamMemberProps {
     position: string;
     imageUrl: string;
     pageUrl?: string;
+    title?: string;
 }

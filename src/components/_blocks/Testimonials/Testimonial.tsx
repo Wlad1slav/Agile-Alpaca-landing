@@ -4,7 +4,7 @@ function Testimonial({name, photoUrl, text}: TestimonialProps) {
     return (
         <div className="testimonial">
             <div className="head">
-                <img src={photoUrl} alt={name}/>
+                <img src={photoUrl} alt={`${name} photo`} loading='lazy' />
                 <h3>{name}</h3>
             </div>
             <p>

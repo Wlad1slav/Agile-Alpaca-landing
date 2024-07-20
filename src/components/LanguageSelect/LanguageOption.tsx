@@ -4,7 +4,7 @@ function LanguageOption({imgUrl, url, name}: LanguageOptionProps) {
     return (
         <li>
             <Link href={`/${url}`}>
-                <img src={imgUrl} alt={name}/>
+                <img src={imgUrl} alt={`${name} language flag`}/>
                 <p>{name}</p>
             </Link>
         </li>

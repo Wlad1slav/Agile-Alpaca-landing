@@ -1,0 +1,27 @@
+# robots.txt for www.example.com
+
+# Allow all web crawlers access to all content
+User-agent: *
+Disallow:
+
+# Block specific web crawlers from accessing any content
+User-agent: BadBot
+Disallow: /
+
+# Disallow all crawlers from accessing specific directories
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /junk/
+
+# Disallow all crawlers from accessing specific files
+User-agent: *
+Disallow: /private.html
+
+# Allow specific crawlers access to specific directories
+User-agent: GoodBot
+Allow: /special-directory/
+
+# Crawl delay to prevent server overload
+User-agent: *
+Crawl-delay: 10

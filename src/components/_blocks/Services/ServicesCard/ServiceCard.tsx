@@ -4,7 +4,7 @@ function ServiceCard({text, title, imgUrl, subText, price, priceWithOutDiscount,
     return (
         <div className="option-selection-card">
             <div className='header-container'>
-                <img src={imgUrl} alt={title}/>
+                <img src={imgUrl} alt={`Illustration of ${title} service`} loading='lazy'/>
 
                 <div className="info">
                     <p className="subtext">

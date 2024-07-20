@@ -22,7 +22,7 @@ function LanguageSelect({languages}: {
     return (
         <div className="select" onMouseEnter={() => setIsActive(true)} onMouseLeave={() => setIsActive(false)}>
             <p className="field">
-                <img src={currentLanguageElement[0].imgUrl} alt={currentLanguageElement[0].name}/>
+                <img src={currentLanguageElement[0].imgUrl} alt={`${currentLanguageElement[0].name} language flag`}/>
                 {currentLanguageElement[0].name}
             </p>
 

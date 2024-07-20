@@ -19,6 +19,7 @@ function Header({localHeader}: {
     const getStartedButtonElement: JSX.Element = <NavButton
         key='btn-h-gs'
         href='/get-started'
+        title="A page with a contact form for Agile Alpaca agency"
         fill={'outline'}
         text={localHeader['cta']['default']}
     />;
@@ -27,6 +28,7 @@ function Header({localHeader}: {
     const contactButtonElement: JSX.Element = <NavButton
         key='btn-h-contact'
         href='#'
+        title="Contact page for Agile Alpaca agency"
         fill={'not-noticeable'}
         text={localHeader['cta']['contact']}
     />;

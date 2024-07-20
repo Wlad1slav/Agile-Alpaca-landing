@@ -17,7 +17,7 @@ function CaseStudy({translateY, title, subtitle, text, pageLink, imageLink}: Rea
             }}
         >
             <div className="head">
-                <img src={imageLink} alt={title}/>
+                <img src={imageLink} alt={`${title} logo`} loading='lazy' />
                 <h3>{title}</h3>
                 <p className="subtitle">{subtitle}</p>
             </div>
